@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  {{#unless detailShown}}
+    {{#each aircrafts as |aircraft|}}
+      {{lt-aircraft aircraft=aircraft showDetail=(action "showDetail") }}
+    {{/each}}
+  {{/unless}}
+  {{outlet}}
+</div>

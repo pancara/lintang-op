@@ -1,0 +1,35 @@
+.pw-tab-buttons {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  background: #E7E0CD;
+  display: block;
+  clear: both;
+  li.pw-tab-button {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    list-style: none;
+    width: 50%;
+    float: left;
+    background: #E7E0CD;
+    border-bottom: 4px solid darken(#E7E0CD, 5);
+    @include transition(background 300ms ease-in-out);
+    cursor: pointer;
+    a {
+      color: #A89342;
+      text-decoration: none;
+      padding: 12px 0px;
+      display: block;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    &.active {
+      border-bottom: 4px solid #B6A67D;
+      @include transition(background 200ms ease-in-out);
+      a{
+        font-weight: bold;
+      }
+    }
+  }
+}

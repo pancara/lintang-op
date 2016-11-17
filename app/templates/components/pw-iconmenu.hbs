@@ -1,0 +1,11 @@
+<a href="javascript:void(0)" class="iconmenu-button">
+  {{fa-icon iconName title=title class="fa-fw"}}
+    <span class="badge {{badgeType}}">
+      {{arr-count items}}
+    </span>
+</a>
+<ul class="iconmenu-list">
+  {{#each items as |item| }}
+    {{component itemComponent item=item itemClick=(action "itemClick") }}
+  {{/each}}
+</ul>

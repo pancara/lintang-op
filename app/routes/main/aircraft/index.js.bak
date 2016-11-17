@@ -1,0 +1,12 @@
+import Ember from 'ember';
+import Aircraft from '../../../objects/aircraft';
+
+export default Ember.Route.extend({
+
+  model(params) {
+    console.log(params);
+    return Aircraft.create({
+      id: params.id
+    });
+  }
+});

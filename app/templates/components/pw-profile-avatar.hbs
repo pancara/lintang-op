@@ -1,0 +1,24 @@
+<div class="info">
+    <h1>Badu badu</h1>
+
+    <h2>123.456.789.0123</h2>
+</div>
+<a class="avatar" {{action "showMenu"}}>
+    <img src="images/mock/profile-1.png" class="photo"/>
+    <img src="images/tick-mark.svg" class="tick"/>
+</a>
+
+<ul class="profile-menu">
+    <li>
+      <a {{action "changePassword"}}>
+          {{fa-icon "lock"}}
+          <span>Change Password</span>
+      </a>
+    </li>
+    <li>
+      <a {{action "logout"}}>
+        {{fa-icon "unlock"}}
+          <span>Logout</span>
+      </a>
+    </li>
+</ul>

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+body {
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  background: $body_background_color;
+}
+
+.wrapper {
+  background: $body_background_color;
+  .page-content-wrapper {
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+@media #{$media_query_desktop} {
+
+  .page-content-wrapper {
+    padding: 0px 0px 0px 0px;
+    margin: 0 0px 0 0px;
+    position: relative;
+  }
+}
+
+//phone
+@media #{$media_query_phone} {
+
+  .page-content-wrapper {
+    padding: 0px;
+    position: relative;
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,15 @@
+<div class="wrapper">
+  {{pw-sidebar onSelectRoute=(action 'selectRoute') menus=menus}}
+
+    <div class="page-content-wrapper">
+      {{pw-pageheader
+      notifications=notifications
+      changePassword=(action 'changePassword')
+      logout=(action 'logout')
+      selectRoute=(action 'selectRoute')
+      }}
+        <div class="page-content">
+          {{outlet}}
+        </div>
+    </div>
+</div>

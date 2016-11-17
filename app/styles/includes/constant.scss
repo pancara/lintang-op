@@ -1,0 +1,16 @@
+// responsive screen size
+$media_query_phone: "only screen and (max-width : 768px)";
+$media_query_desktop: "only screen and (min-width : 769px)";
+
+
+
+// body
+$body_background_color: #FBF8EF;;
+
+//component
+$component_shadow_focused: transparentize(#666, 0.9);
+
+
+// color
+$base_color: #575033;
+$text_color: #93751C;

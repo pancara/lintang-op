@@ -1,0 +1,52 @@
+<table>
+    <thead>
+    {{#if monthNavigation}}
+        <tr>
+            <th>
+              {{fa-icon 'chevron-left' click=(action "previousMonth") size="lg" }}
+            </th>
+            <th colspan="5">
+              {{date-month-name month}} {{year}}
+            </th>
+            <th>
+              {{fa-icon 'chevron-right' click=(action "nextMonth") size="lg" }}
+            </th>
+        </tr>
+    {{/if}}
+    <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each calendar as |week|}}
+        <tr>
+          {{#each week as |date|}}
+              <td>
+
+                {{#if (date-month date month)}}
+                  {{#if (date-inlist date markedDates)}}
+                      <span {{action "clickDate" date}} class="in-month marked">
+                        {{moment-format date 'D'}}
+                      </span>
+                  {{else}}
+                      <span {{action "clickDate" date}} class="in-month">
+                        {{moment-format date 'D'}}
+                      </span>
+                  {{/if}}
+                {{else}}
+                    <span>
+                      {{moment-format date 'D'}}
+                    </span>
+                {{/if}}
+              </td>
+          {{/each}}
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

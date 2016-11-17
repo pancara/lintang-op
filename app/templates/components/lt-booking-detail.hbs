@@ -1,0 +1,65 @@
+<div class="col-lg-12">
+
+    <table class="table passenger">
+        <thead>
+        <tr>
+            <th colspan="4">Booking Detail</th>
+        </tr>
+        <tr>
+            <th colspan="2">{{booking.passengers.length}} Passengers</th>
+            <th>Gender</th>
+            <th>Passport Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each booking.passengers as |passenger index|}}
+        <tr>
+            <td style="width: 10px;">{{add index 1}}.</td>
+            <td style="width: 220px;">{{passenger.name}}</td>
+            <td>{{passenger.gender}}</td>
+            <td>{{passenger.passportNumber}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <td style="width: 245px;">Charter Prices</td>
+            <td class="price">
+                $ {{format-number booking.charterPrices precision=2}}
+            </td>
+        </tr>
+        <tr>
+            <td>Non Member free for charter</td>
+            <td class="price">
+                $ {{format-number booking.nonMemberFreeForCharter precision=2}}
+            </td>
+        </tr>
+        <tr>
+            <td>Subtotal</td>
+            <td class="price">
+                $ {{format-number booking.subtotal precision=2}}
+            </td>
+        </tr>
+        <tr>
+            <td>Taxes</td>
+            <td class="price">
+                $ {{format-number booking.taxes precision=2}}
+            </td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td class="price">
+                $ {{format-number booking.total precision=2}}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="bottom">
+        <button>CONFIRM</button>
+        <button>REJECT</button>
+    </div>
+</div>
+

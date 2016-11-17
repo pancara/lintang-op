@@ -1,0 +1,44 @@
+.pw-month-calendar {
+  font-family: "Gotham Pro";
+  padding: 0 0 0 0;
+  display: inline-block;
+  table {
+    thead {
+      th {
+        font-size: 13px;
+        padding: 8px 8px 8px 8px;
+        text-align: center;
+        color: #666;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 5px 24px 5px 24px;
+        text-align: center;
+        font-size: 13px;
+        span {
+
+          &.in-month {
+            background: transparent;
+            color: #A48C2D;
+            cursor: default;
+            &.marked {
+              background: #A48C2D;
+              color: #FFF;
+              border-radius: 25px;
+            }
+          }
+        }
+      }
+      span {
+//        width: 40px;
+//        height: 40px;
+        padding: 8px 10px 8px 10px;
+        display: block;
+        font-size: 20px;
+        color: transparentize(#A48C2D, 0.6);
+      }
+    }
+  }
+}

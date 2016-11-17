@@ -1,0 +1,27 @@
+<div class="col-lg-4 aircraft-pic">
+    <img src="images/aircraft/{{aircraft.pictureUrl}}"/>
+</div>
+<div class="col-lg-6 aircraft-info">
+    <h1>{{aircraft.name}}</h1>
+    <div>
+        <label>Information</label>
+
+        <p>{{aircraft.type}} | {{aircraft.seatingMax}} Seats</p>
+    </div>
+    <div>
+        <label>Pricing</label>
+
+        <p>$ {{format-number aircraft.pricing precision=2}}</p>
+    </div>
+    <div>
+        <button class="btn btn-success btn-xs"{{action 'showDetail' aircraft}}>
+            {{fa-icon "search-plus"}}
+            detail
+        </button>
+    </div>
+</div>
+<div class="col-lg-2 aircraft-status">
+    <label>Status</label>
+    <button>Active</button>
+    <button>Open</button>
+</div>

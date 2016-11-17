@@ -1,0 +1,49 @@
+table.aircraft-detail {
+  background: #FBF8EF;
+  margin-top: 16px;
+  width: 100%;
+  td {
+    padding: 10px 16px 10px 32px;
+    border-bottom: 1px solid #E7E0CD;
+    vertical-align: top;
+
+    &.field {
+      font-size: 13px;
+      color: #666;
+
+      &.images {
+        background: #E7E0CD;
+      }
+    }
+    &.value {
+      font-size: 16px;
+      color: $text-color;
+      &.images {
+        background: #E7E0CD;
+      }
+
+      img {
+        max-width: 240px;
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.aircraft-availability-panel {
+  background: #CEBF94;
+  font-family: "Gotham Pro";
+  div {
+    text-align: center;
+    padding: 16px 16px 12px 16px;
+    vertical-align: middle;
+    color: #94770C;
+    span.title {
+      color: darken(#94770C, 10);
+      font-size: 18px;
+    }
+  }
+}

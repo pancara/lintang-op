@@ -1,0 +1,21 @@
+<div class="col-lg-3">
+    <label>Booking Code</label>
+    <p>{{booking.bookingCode}}</p>
+</div>
+<div class="col-lg-3">
+    <label>Aircraft</label>
+    <p>{{booking.aircraft}}</p>
+</div>
+<div class="col-lg-3">
+    <label>Destination</label>
+    <p>{{booking.destination}}</p>
+</div>
+<div class="col-lg-2">
+    <label>Booking Date</label>
+    <p>
+      {{moment-format booking.date 'DD MMM YYYY'}}
+    </p>
+</div>
+<div class="col-lg-1">
+    <img src="./images/tick.svg" {{action "toggleDetail"}} class="toggle-detail"/>
+</div>

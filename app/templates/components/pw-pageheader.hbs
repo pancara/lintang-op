@@ -1,0 +1,10 @@
+<div class="user-notification hide-on-phone">
+  {{pw-iconmenu name="notification" iconName="envelope"
+  hint="Notification" badgeType="badge-danger"
+  itemComponent="pw-iconmenuitem-notification"
+  items=notifications
+  itemSelect="iconMenuItemSelect"
+  }}
+</div>
+{{pw-profile-avatar actionLogout=(action "actionLogout") actionChangePassword=(action "actionChangePassword")}}
+<div class="clearfix"></div>

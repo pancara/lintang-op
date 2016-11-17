@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'lintang-op',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/lintang-op',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
