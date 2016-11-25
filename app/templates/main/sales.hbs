@@ -1,2 +1,80 @@
-SALES...
-{{outlet}}
+{{#pw-page-title title="Sales" icon="area-chart"}}
+{{/pw-page-title}}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pw-panel pw-panel-align-right">
+                <button class="btn btn-xs" {{action "toggleFilter"}}>
+                  {{#if shownFilter }}
+                      Hide Filter &nbsp;
+                    {{fa-icon "caret-up"}}
+                  {{else}}
+                      Show Filter &nbsp;
+                    {{fa-icon "caret-down"}}
+                  {{/if}}
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+          {{pw-sales-filter
+          aircraftAvailable=aircraftAvailable
+          aircraftTypes=aircraftTypes
+          register-as=filterSales
+          shown=shownFilter}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-3">
+                  {{pw-tile value='9999' caption='Total Sales' description='total sales' tileType='pw-tile-blue' icon='line-chart'}}
+                </div>
+                <div class="col-lg-3">
+                  {{pw-tile value='9999' caption='Total Order' description='total order' tileType='pw-tile-green' icon='plane'}}
+                </div>
+                <div class="col-lg-3">
+                  {{pw-tile value='9999' caption='Average sales' description='average sales' tileType='pw-tile-red' icon='pie-chart'}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="pw-table pw-zebra pw-bordered">
+                        <thead>
+                        <tr>
+                            <th colspan="7" style="text-align: center;">List of Bookings</th>
+                        </tr>
+                        <tr>
+                            <th>No</th>
+                            <th>Booking Code</th>
+                            <th>Aircraft</th>
+                            <th>Date</th>
+                            <th>Route</th>
+                            <th class="pw-number">Rp. Value</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {{#each (range 1 10) as |index|}}
+                            <tr>
+                                <td>{{index}}.</td>
+                                <td>BC-00001</td>
+                                <td>CESSNA</td>
+                                <td>1 Nov 2016</td>
+                                <td>HLM - CKG</td>
+                                <td class="pw-number">Rp. 999.999,00</td>
+                                <td><span class="label label-success">Completed</span></td>
+                            </tr>
+                        {{/each}}
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

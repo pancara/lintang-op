@@ -1,15 +1,19 @@
 @import "bourbon";
 
-@import "includes/bootstrap-override";
+@import "includes/bootstrap-override/vars";
 @import "bootstrap";
-
+@import "includes/bootstrap-override/custom";
 
 @import "includes/constant";
 @import "includes/mixins";
 @import "includes/fonts";
-@import "includes/main";
+@import "includes/form";
 @import "includes/badge";
 
+
+@import "component/pw-table";
+@import "component/pw-label";
+@import "component/pw-panel";
 @import "component/pw-variable";
 @import "component/pw-button";
 @import "component/pw-input";
@@ -18,10 +22,14 @@
 @import "component/pw-profile-avatar";
 @import "component/pw-tab-buttons";
 @import "component/pw-month-calendar";
-
 @import "component/pw-iconmenu";
 @import "component/pw-sidebar";
+@import "component/pw-tile";
 @import "component/lt-booking";
 @import "component/lt-aircraft";
+
 @import "includes/login";
 @import "includes/aircraft";
+@import "includes/newbooking";
+@import "includes/sales";
+@import "includes/main";

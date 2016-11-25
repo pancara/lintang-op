@@ -17,15 +17,11 @@ export default Ember.Component.extend({
       this.set('shownMenu', true);
     },
 
-    logout() {
+    fireAction(param) {
       this.set('shownMenu', false);
-      this.sendAction('actionLogout');
-    },
-    changePassword() {
-      this.set('shownMenu', false);
-      this.sendAction('actionChangePassword');
+      console.log(param);
+      this.sendAction(param);
     }
-
   }
 
 });

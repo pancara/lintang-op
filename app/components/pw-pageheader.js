@@ -13,15 +13,23 @@ export default Ember.Component.extend({
       }
     },
 
-    iconMenuItemSelect(param1, param2) {
-      let route = 'main.' + param1;
-      this.sendAction('selectRoute', route, param2);
+    iconMenuItemSelect(name, data) {
+      var route;
+      if (name === 'newbooking') {
+        route = 'main.booking.active';
+      }
+      //this.sendAction('selectRoute', route, data);
+      this.sendAction('selectRoute', route);
     },
 
-    actionChangePassword() {
+    userProfile() {
+      this.sendAction('updateUserProfile');
+    },
+
+    changePassword() {
       this.sendAction('changePassword');
     },
-    actionLogout() {
+    logout() {
       this.sendAction('logout');
     }
   }

@@ -8,6 +8,9 @@
     "font-awesome": "~4.5.0",
     "bootstrap": "^3.3.7",
     "bourbon": "4.2.7",
-    "jquery.nicescroll": "^3.6.8"
+    "jquery.nicescroll": "^3.6.8",
+    "chart.js": "^2.4.0",
+    "randomcolor": "^0.4.4",
+    "bootstrap-datepicker": "^1.6.4"
   }
 }

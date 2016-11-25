@@ -10,13 +10,17 @@ Router.map(function () {
   this.route('forget-password');
 
   this.route('main', function () {
+
     this.route('change-password');
+    this.route('user-profile', function () {
+      this.route('update');
+    });
 
     this.route('booking', function () {
       this.route('active');
       this.route('history');
     });
-    this.route('profile');
+
     this.route('sales');
 
     this.route('aircraft', {path: 'aircraft'});
@@ -28,12 +32,17 @@ Router.map(function () {
     this.route('notification', {path: 'notification'}, function () {
       this.route('notification-detail', {path: ':id'});
     });
+
+    this.route('operator-profile', function () {
+      this.route('update');
+    });
   });
 
   this.route('help');
 
   this.route('logout');
   this.route('demo');
+  this.route('report');
 });
 
 export default Router;

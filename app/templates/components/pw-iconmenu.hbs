@@ -4,8 +4,13 @@
       {{arr-count items}}
     </span>
 </a>
-<ul class="iconmenu-list">
-  {{#each items as |item| }}
-    {{component itemComponent item=item itemClick=(action "itemClick") }}
-  {{/each}}
-</ul>
+<div class="iconmenu-list">
+    <p class="title">
+        You have {{arr-count items}} notifications.
+    </p>
+    <ul>
+      {{#each items as |data| }}
+        {{component itemComponent data=data onItemClick=(action "itemClick") }}
+      {{/each}}
+    </ul>
+</div>

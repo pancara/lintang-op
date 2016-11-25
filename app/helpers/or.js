@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
 export function or(params/*, hash*/) {
-  for(var i = 0; i < params.length; i++) {
-    if (params[i] === true) {
+
+  for (var i = 0; i < params.length; i++) {
+    var param = params[i];
+    if (param === true) {
       return true;
     }
   }

@@ -10,6 +10,7 @@ export default Ember.Component.extend({
     this.get('ui-service').applyNiceScroll(this.$())
   },
 
+
   onToggleCollapse: Ember.observer('collapsed', function () {
     this.$().parent().toggleClass('collapsed');
   }),

@@ -2,19 +2,25 @@
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   width: 100%;
+  height: auto;
   background: #E7E0CD;
   display: block;
-  clear: both;
-  li.pw-tab-button {
+  div.pw-tab-button {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     list-style: none;
     width: 50%;
-    float: left;
     background: #E7E0CD;
     border-bottom: 4px solid darken(#E7E0CD, 5);
     @include transition(background 300ms ease-in-out);
     cursor: pointer;
+    display: inline-block;
+    float: left;
+    &:last-child {
+      &:after {
+        clear: both;
+      }
+    }
     a {
       color: #A89342;
       text-decoration: none;
@@ -27,7 +33,7 @@
     &.active {
       border-bottom: 4px solid #B6A67D;
       @include transition(background 200ms ease-in-out);
-      a{
+      a {
         font-weight: bold;
       }
     }

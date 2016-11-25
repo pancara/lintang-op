@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'li',
+  tagName: 'div',
   classNames: 'pw-tab-button',
   classNameBindings: ['button.active:active'],
 
-  mouseDown() {
+  click() {
     let button = this.get('button');
     this.sendAction('buttonClick', button);
   }

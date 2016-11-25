@@ -1,8 +1,15 @@
-{{pw-tab-buttons buttons=buttons
-buttonClick=(action 'buttonClick')
-activeRoute=activeRoute
-}}
+{{pw-page-title title="Aircraft | Detail" icon="plane"}}
+
+
 <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+          {{pw-tab-buttons buttons=buttons
+          buttonClick=(action 'buttonClick')
+          activeRoute=activeRoute
+          }}
+        </div>
+    </div>
   {{outlet}}
 </div>
 

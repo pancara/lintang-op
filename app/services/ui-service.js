@@ -16,10 +16,10 @@ export default Ember.Service.extend({
     }
 
     $el.niceScroll({
-      cursorcolor: "#938150",
+      cursorcolor: "#AAA",
       cursoropacitymin: 0,
       cursoropacitymax: 1,
-      cursorwidth: "6px",
+      cursorwidth: "8px",
       cursorborder: "0px solid #fff",
       cursorborderradius: "2px",
       zindex: 99999

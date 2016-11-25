@@ -15,6 +15,7 @@ export default Ember.Component.extend({
   onHiding: false,
 
   didInsertElement() {
+    this.get('ui-service').applyNiceScroll(this.$('ul'));
   },
 
   hideMenu() {
@@ -34,8 +35,8 @@ export default Ember.Component.extend({
       this.set('menuVisible', true);
     },
 
-    itemClick(param) {
-      this.sendAction('itemSelect', this.get('name'), param.get('item'));
+    itemClick(itemData) {
+      this.sendAction('onItemSelect', this.get('name'), itemData);
       this.hideMenu();
     }
   }

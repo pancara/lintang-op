@@ -2,97 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deeb5765-cc0a-4661-ae3f-486d91cccfa4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/mock/1_Lintang_Web_login.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/mock/2_Lintang_Web_booking.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/mock/3_Lintang_Web_aircraft.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/login-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo-login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/mock/profile-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/tick-mark.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/tick.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/booking/active.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/aircraft-detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/aircraft-detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/aircraft.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/objects/aircraft.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/aircraft.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/app.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/badge.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/booking.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/objects/booking.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/bootstrap-override.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/change-password.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/change-password.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/constant.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/utils/constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/index.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/booking/index.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/aircraft/index.js.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/booking/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/booking/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/notification/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/lintang-op.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lintang_op_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/login.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/lt-aircraft.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/lt-booking-detail.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/lt-booking-detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/lt-booking-master.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/lt-booking-master.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/lt-booking.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/notification/notification-detail.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/notification/notification-detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/notification/notification-detail.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/objects/notification.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/aircraft-detail/price-availability.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/aircraft-detail/price-availability.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-checkbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-iconmenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-iconmenu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-iconmenuitem-notification.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-iconmenuitem-notification.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/mixins/pw-iconmenuitem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-input.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-month-calendar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-page-header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-pageheader.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-pageheader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-profile-avatar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-sidebar-button.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-sidebar-button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-sidebar-menu.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-sidebar-menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-sidebar.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-sidebar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-sidebar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-tab-buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-variable.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/objects/component/tab-button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/aircraft-detail/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/app.css" afterPath="$PROJECT_DIR$/app/controllers/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/application.hbs" afterPath="$PROJECT_DIR$/app/templates/application.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/change-password.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/objects/concrete-array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/bootstrap-override/custom.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/dashboard.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/booking/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/operator-profile/index.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/main/user-profile/index.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes/main/operator-profile/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/newbooking.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/components/pw-iconmenuitem-newbooking.hbs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/pw-iconmenuitem-newbooking.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-label.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-panel.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/component/pw-table.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main/sales.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/includes/sales.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/pw-iconmenuitem-notification.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/templates/components/pw-iconmenuitem-notification.hbs" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/routes/main/profile.js" afterPath="$PROJECT_DIR$/app/routes/main/operator-profile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/styles/includes/bootstrap-override.scss" afterPath="$PROJECT_DIR$/app/styles/includes/bootstrap-override/vars.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/templates/main/profile.hbs" afterPath="$PROJECT_DIR$/app/templates/main/operator-profile.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs" afterPath="$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/aircraft.hbs" afterPath="$PROJECT_DIR$/app/templates/main/aircraft.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/includes/aircraft.scss" afterPath="$PROJECT_DIR$/app/styles/includes/aircraft.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/app.scss" afterPath="$PROJECT_DIR$/app/styles/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/booking.hbs" afterPath="$PROJECT_DIR$/app/templates/main/booking.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/change-password.hbs" afterPath="$PROJECT_DIR$/app/templates/main/change-password.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/includes/constant.scss" afterPath="$PROJECT_DIR$/app/styles/includes/constant.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/datastub.js" afterPath="$PROJECT_DIR$/app/services/datastub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/demo.hbs" afterPath="$PROJECT_DIR$/app/templates/demo.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/demo.js" afterPath="$PROJECT_DIR$/app/controllers/demo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ember-cli-build.js" afterPath="$PROJECT_DIR$/ember-cli-build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.js" afterPath="$PROJECT_DIR$/config/environment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/index.hbs" afterPath="$PROJECT_DIR$/app/templates/main/index.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/login.hbs" afterPath="$PROJECT_DIR$/app/templates/login.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/login.js" afterPath="$PROJECT_DIR$/app/controllers/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/includes/login.scss" afterPath="$PROJECT_DIR$/app/styles/includes/login.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/component/lt-aircraft.scss" afterPath="$PROJECT_DIR$/app/styles/component/lt-aircraft.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/components/lt-booking-master.hbs" afterPath="$PROJECT_DIR$/app/templates/components/lt-booking-master.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/lt-booking.js" afterPath="$PROJECT_DIR$/app/components/lt-booking.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main.hbs" afterPath="$PROJECT_DIR$/app/templates/main.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/main.js" afterPath="$PROJECT_DIR$/app/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/includes/main.scss" afterPath="$PROJECT_DIR$/app/styles/includes/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/or.js" afterPath="$PROJECT_DIR$/app/helpers/or.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs" afterPath="$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs" afterPath="$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/pw-iconmenu.js" afterPath="$PROJECT_DIR$/app/components/pw-iconmenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/component/pw-iconmenu.scss" afterPath="$PROJECT_DIR$/app/styles/component/pw-iconmenu.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mixins/pw-iconmenuitem.js" afterPath="$PROJECT_DIR$/app/mixins/pw-iconmenuitem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/components/pw-pageheader.hbs" afterPath="$PROJECT_DIR$/app/templates/components/pw-pageheader.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/pw-pageheader.js" afterPath="$PROJECT_DIR$/app/components/pw-pageheader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/components/pw-profile-avatar.hbs" afterPath="$PROJECT_DIR$/app/templates/components/pw-profile-avatar.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/pw-profile-avatar.js" afterPath="$PROJECT_DIR$/app/components/pw-profile-avatar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/component/pw-profile-avatar.scss" afterPath="$PROJECT_DIR$/app/styles/component/pw-profile-avatar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/pw-sidebar.js" afterPath="$PROJECT_DIR$/app/components/pw-sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/pw-tab-button.js" afterPath="$PROJECT_DIR$/app/components/pw-tab-button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/components/pw-tab-buttons.hbs" afterPath="$PROJECT_DIR$/app/templates/components/pw-tab-buttons.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/pw-tab-buttons.js" afterPath="$PROJECT_DIR$/app/components/pw-tab-buttons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/component/pw-tab-buttons.scss" afterPath="$PROJECT_DIR$/app/styles/component/pw-tab-buttons.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/router.js" afterPath="$PROJECT_DIR$/app/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/sales.hbs" afterPath="$PROJECT_DIR$/app/templates/main/sales.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/initializers/service-initializer.js" afterPath="$PROJECT_DIR$/app/initializers/service-initializer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/ui-service.js" afterPath="$PROJECT_DIR$/app/services/ui-service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs" afterPath="$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lintang-op.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,21 +94,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="arr-count.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/arr-count.js">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/includes/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state vertical-scroll-proportion="-4.6666665" vertical-offset="216" max-vertical-offset="1206">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pw-iconmenu.hbs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs">
+      <file leaf-file-name="aircraft-detail.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08985025" vertical-offset="0" max-vertical-offset="601">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="378">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="846">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="active.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/main/booking/active.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lt-booking.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/lt-booking.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pw-table.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/styles/component/pw-table.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548">
+              <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lt-booking-master.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/components/lt-booking-master.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="990">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lt-booking.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/components/lt-booking.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/includes/login.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2222223" vertical-offset="363" max-vertical-offset="2916">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="price-availability.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1062">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,57 +202,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/routes/main/aircraft/aircraft-detail.js" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft/aircraft-detail.hbs" />
-        <option value="$PROJECT_DIR$/app/controllers/main/aircraft/aircraft-detail.js" />
-        <option value="$PROJECT_DIR$/app/utils/datastub.js" />
-        <option value="$PROJECT_DIR$/app/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/controllers/main/booking/active.js" />
-        <option value="$PROJECT_DIR$/app/styles/includes/bootstrap-override.scss" />
-        <option value="$PROJECT_DIR$/app/templates/components/lt-aircraft.hbs" />
-        <option value="$PROJECT_DIR$/app/routes/main/aircraft-detail/detail.js" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft-detail/detail.hbs" />
-        <option value="$PROJECT_DIR$/app/controllers/main/aircraft-detail/index.js" />
-        <option value="$PROJECT_DIR$/app/routes/main/aircraft/detail.js" />
-        <option value="$PROJECT_DIR$/app/controllers/main/aircraft/detail.js" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft.hbs" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft/detail.hbs" />
-        <option value="$PROJECT_DIR$/app/router.js" />
-        <option value="$PROJECT_DIR$/app/controllers/main/aircraft-detail.js" />
-        <option value="$PROJECT_DIR$/app/controllers/main/aircraft.js" />
-        <option value="$PROJECT_DIR$/app/routes/main/booking/active.js" />
-        <option value="$PROJECT_DIR$/app/routes/main/booking/history.js" />
-        <option value="$PROJECT_DIR$/app/templates/main/booking.hbs" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs" />
-        <option value="$PROJECT_DIR$/app/routes/main/aircraft-detail.js" />
-        <option value="$PROJECT_DIR$/app/routes/main/aircraft-detail/view.js" />
-        <option value="$PROJECT_DIR$/app/services/datastub.js" />
-        <option value="$PROJECT_DIR$/app/styles/includes/main.scss" />
-        <option value="$PROJECT_DIR$/app/styles/includes/constant.scss" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs" />
-        <option value="$PROJECT_DIR$/app/controllers/login.js" />
+        <option value="$PROJECT_DIR$/app/objects/concrete-array.js" />
+        <option value="$PROJECT_DIR$/app/components/pw-sidebar.js" />
+        <option value="$PROJECT_DIR$/app/utils/array-util.js" />
+        <option value="$PROJECT_DIR$/ember-cli-build.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/templates/components/pw-datepicker.hbs" />
+        <option value="$PROJECT_DIR$/app/controllers/main/booking/history.js" />
+        <option value="$PROJECT_DIR$/app/templates/components/lt-booking-master.hbs" />
+        <option value="$PROJECT_DIR$/app/styles/includes/form.scss" />
+        <option value="$PROJECT_DIR$/app/mixins/register-as-component.js" />
+        <option value="$PROJECT_DIR$/app/components/pw-select.js" />
+        <option value="$PROJECT_DIR$/app/components/pw-datepicker.js" />
+        <option value="$PROJECT_DIR$/app/components/pw-iconmenu.js" />
+        <option value="$PROJECT_DIR$/app/services/ui-service.js" />
         <option value="$PROJECT_DIR$/app/initializers/service-initializer.js" />
-        <option value="$PROJECT_DIR$/tests/unit/services/user-service-test.js" />
-        <option value="$PROJECT_DIR$/app/utils/constants.js" />
-        <option value="$PROJECT_DIR$/app/services/user-service.js" />
-        <option value="$PROJECT_DIR$/app/styles/app.scss" />
-        <option value="$PROJECT_DIR$/app/helpers/month.js" />
-        <option value="$PROJECT_DIR$/app/routes/demo.js" />
-        <option value="$PROJECT_DIR$/app/helpers/date-eq.js" />
-        <option value="$PROJECT_DIR$/app/helpers/date-inlist.js" />
-        <option value="$PROJECT_DIR$/app/helpers/date-month-name.js" />
-        <option value="$PROJECT_DIR$/app/controllers/demo.js" />
-        <option value="$PROJECT_DIR$/app/templates/demo.hbs" />
-        <option value="$PROJECT_DIR$/app/components/pw-month-calendar.js" />
-        <option value="$PROJECT_DIR$/app/templates/components/pw-month-calendar.hbs" />
-        <option value="$PROJECT_DIR$/app/styles/component/pw-month-calendar.scss" />
-        <option value="$PROJECT_DIR$/app/routes/main/aircraft-detail/price-availability.js" />
-        <option value="$PROJECT_DIR$/app/objects/aircraft.js" />
-        <option value="$PROJECT_DIR$/app/controllers/main/aircraft-detail/price-availability.js" />
-        <option value="$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs" />
-        <option value="$PROJECT_DIR$/app/styles/includes/aircraft.scss" />
-        <option value="$PROJECT_DIR$/app/helpers/arr-count.js" />
+        <option value="$PROJECT_DIR$/app/services/datastub.js" />
+        <option value="$PROJECT_DIR$/app/templates/components/pw-multicheckbox.hbs" />
+        <option value="$PROJECT_DIR$/app/components/pw-multicheckbox.js" />
+        <option value="$PROJECT_DIR$/app/styles/includes/newbooking.scss" />
+        <option value="$PROJECT_DIR$/app/templates/components/pw-iconmenuitem-newbooking.hbs" />
         <option value="$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs" />
+        <option value="$PROJECT_DIR$/app/styles/component/pw-iconmenu.scss" />
+        <option value="$PROJECT_DIR$/app/templates/main/booking.hbs" />
+        <option value="$PROJECT_DIR$/app/templates/main/change-password.hbs" />
+        <option value="$PROJECT_DIR$/app/styles/includes/bootstrap-override/custom.scss" />
+        <option value="$PROJECT_DIR$/app/styles/includes/bootstrap-override/vars.scss" />
+        <option value="$PROJECT_DIR$/app/templates/components/pw-sales-filter.hbs" />
+        <option value="$PROJECT_DIR$/app/templates/components/pw-page-title.hbs" />
+        <option value="$PROJECT_DIR$/app/components/pw-sales-filter.js" />
+        <option value="$PROJECT_DIR$/app/controllers/main/sales.js" />
+        <option value="$PROJECT_DIR$/app/styles/includes/sales.scss" />
+        <option value="$PROJECT_DIR$/app/styles/includes/tile.scss" />
+        <option value="$PROJECT_DIR$/app/components/pw-tile.js" />
+        <option value="$PROJECT_DIR$/app/templates/components/pw-tile.hbs" />
+        <option value="$PROJECT_DIR$/app/styles/component/pw-tile.scss" />
+        <option value="$PROJECT_DIR$/app/helpers/range.js" />
+        <option value="$PROJECT_DIR$/app/styles/includes/table.scss" />
+        <option value="$PROJECT_DIR$/app/styles/component/lt-aircraft.scss" />
+        <option value="$PROJECT_DIR$/app/styles/includes/constant.scss" />
+        <option value="$PROJECT_DIR$/app/styles/component/pw-label.scss" />
+        <option value="$PROJECT_DIR$/app/styles/app.scss" />
+        <option value="$PROJECT_DIR$/app/templates/main/aircraft.hbs" />
+        <option value="$PROJECT_DIR$/app/styles/includes/aircraft.scss" />
+        <option value="$PROJECT_DIR$/app/styles/component/pw-panel.scss" />
+        <option value="$PROJECT_DIR$/app/templates/main/sales.hbs" />
+        <option value="$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs" />
+        <option value="$PROJECT_DIR$/app/styles/includes/main.scss" />
+        <option value="$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs" />
+        <option value="$PROJECT_DIR$/app/templates/main/booking/active.hbs" />
+        <option value="$PROJECT_DIR$/app/components/lt-booking.js" />
+        <option value="$PROJECT_DIR$/app/styles/component/pw-table.scss" />
       </list>
     </option>
   </component>
@@ -255,6 +313,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,6 +351,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lintang-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lintang-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -301,7 +383,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,7 +401,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -341,7 +423,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="booking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lintang-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lintang-op" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -367,7 +475,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,11 +493,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,18 +515,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -437,21 +539,23 @@
     <property name="JavaScriptLanguageLevel" value="ES6" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/pancara/Projects/ATV/lintang-op/app/templates/components/pw-tab-button.scss" />
     <property name="LayoutCode.rearrangeEntriesHandlebars" value="false" />
+    <property name="LayoutCode.rearrangeEntriesSCSS" value="false" />
+    <property name="LayoutCode.rearrangeEntriesECMAScript 6" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers/main/booking" />
+      <recent name="$PROJECT_DIR$/app/controllers/main" />
+      <recent name="$PROJECT_DIR$/app/routes/main/operator-profile" />
+      <recent name="$PROJECT_DIR$/app/templates/main/operator-profile" />
       <recent name="$PROJECT_DIR$/app/controllers/main/aircraft" />
-      <recent name="$PROJECT_DIR$/app/controllers/main/aircraft-detail" />
-      <recent name="$PROJECT_DIR$/app/templates/main/aircraft-detail" />
-      <recent name="$PROJECT_DIR$/app/routes/main/aircraft-detail" />
-      <recent name="$PROJECT_DIR$/app/routes/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/styles/component" />
+      <recent name="$PROJECT_DIR$/app/styles/includes" />
+      <recent name="$PROJECT_DIR$/app/styles/bootstrap-override" />
       <recent name="$PROJECT_DIR$/app/templates/main" />
       <recent name="$PROJECT_DIR$/app/controllers/main" />
-      <recent name="$PROJECT_DIR$/app/routes/main" />
-      <recent name="$PROJECT_DIR$/app/routes/main/aircraft" />
-      <recent name="$PROJECT_DIR$/app/controllers/main/aircraft" />
     </key>
   </component>
   <component name="RunManager">
@@ -512,7 +616,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4671307" sideWeight="0.49920762" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3225058" sideWeight="0.49920762" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -527,7 +631,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15749235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29816514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -542,9 +646,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50507617" sideWeight="0.49920762" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22969837" sideWeight="0.49920762" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15749235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29816514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50507617" sideWeight="0.5007924" order="2" side_tool="true" content_ui="tabs" />
@@ -568,122 +672,355 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/templates/main/booking/index.hbs">
+    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="378">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-iconmenu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667" vertical-offset="864" max-vertical-offset="1998">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="792">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/main/aircraft-detail.js">
+    <entry file="file://$PROJECT_DIR$/app/resolver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft.hbs">
+    <entry file="file://$PROJECT_DIR$/ember-cli-build.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="234">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state vertical-scroll-proportion="1.1214057" vertical-offset="0" max-vertical-offset="882">
+          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/components/lt-aircraft.hbs">
+    <entry file="file://$PROJECT_DIR$/.ember-cli">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="594">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/main/aircraft.js">
+    <entry file="file://$PROJECT_DIR$/app/report/template.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/main/booking/history.js">
+    <entry file="file://$PROJECT_DIR$/app/report/route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/main/booking/active.js">
+    <entry file="file://$PROJECT_DIR$/app/templates/main/user-profile.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/operator-profile.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/operator-profile/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="60" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/main/booking.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="180">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/main/booking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/main/booking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="252">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/main/aircraft-detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/datastub.js">
+    <entry file="file://$PROJECT_DIR$/app/templates/main/change-password.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1223" max-vertical-offset="2034">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/bootstrap-override/custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0" vertical-offset="18" max-vertical-offset="720">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-page-title.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599">
+          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/pw-sales-filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2340">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/main/sales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1080">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="198">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/sales.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.185184" vertical-offset="409" max-vertical-offset="1008">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ember-cli-bootstrap-sassy/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_wells.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/pw-tile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-tile.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="216">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-tile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665" vertical-offset="540" max-vertical-offset="17712">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-sales-filter.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.494157" vertical-offset="895" max-vertical-offset="1494">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/range.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ember-cli-bootstrap-sassy/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_table-row.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ember-cli-bootstrap-sassy/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_tables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.3333335" vertical-offset="540" max-vertical-offset="4320">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/bootstrap-override/vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4074073" vertical-offset="2302" max-vertical-offset="15498">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/components/lt-aircraft.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="27" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/component/lt-aircraft.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.666666" vertical-offset="0" max-vertical-offset="1440">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-page-header.scss">
+    <entry file="file://$PROJECT_DIR$/node_modules/ember-cli-bootstrap-sassy/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_labels.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+        <state vertical-scroll-proportion="0.060100168" vertical-offset="0" max-vertical-offset="599">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ember-cli-bootstrap-sassy/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223" vertical-offset="57" max-vertical-offset="15840">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/constant.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.185185" vertical-offset="103" max-vertical-offset="738">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ember-cli-bootstrap-sassy/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_labels.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1296">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-label.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.185184" vertical-offset="337" max-vertical-offset="1836">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0" vertical-offset="54" max-vertical-offset="738">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="954">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/aircraft.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="2232">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-panel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="234">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/sales.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="1548">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/includes/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223" vertical-offset="363" max-vertical-offset="2916">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -691,284 +1028,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/includes/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="828">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state vertical-scroll-proportion="-4.6666665" vertical-offset="216" max-vertical-offset="1206">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/unit/services/user-service-test.js">
+    <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45859873" vertical-offset="0" max-vertical-offset="628">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/user-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1433121" vertical-offset="0" max-vertical-offset="628">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/utils/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37261146" vertical-offset="0" max-vertical-offset="628">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/includes/constant.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20965058" vertical-offset="0" max-vertical-offset="601">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/initializers/service-initializer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1433121" vertical-offset="0" max-vertical-offset="628">
-          <caret line="5" column="72" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/ui-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/includes/login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7653061" vertical-offset="486" max-vertical-offset="2916">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667" vertical-offset="0" max-vertical-offset="594">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-iconmenuitem-notification.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/date-month.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/main/notification/notification-detail.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="216">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="648">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/main/notification.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3322034" vertical-offset="3404" max-vertical-offset="16884">
-          <caret line="200" column="15" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/date-eq.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/date-inlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/includes/fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="628">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/date-month-name.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <caret line="8" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/demo.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="216">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-month-calendar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="900">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state vertical-scroll-proportion="-8.666667" vertical-offset="0" max-vertical-offset="378">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail/view.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="846">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="846">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/main/aircraft-detail/view.js">
+    <entry file="file://$PROJECT_DIR$/app/templates/components/lt-booking.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05732484" vertical-offset="0" max-vertical-offset="628">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/main/aircraft-detail/price-availability.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40127388" vertical-offset="0" max-vertical-offset="628">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/objects/aircraft.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48726115" vertical-offset="0" max-vertical-offset="628">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/pw-month-calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1136" max-vertical-offset="1764">
-          <caret line="88" column="5" selection-start-line="55" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/main/aircraft-detail/price-availability.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54140127" vertical-offset="416" max-vertical-offset="1404">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-month-calendar.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24489796" vertical-offset="0" max-vertical-offset="1044">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/main/aircraft-detail/price-availability.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64285713" vertical-offset="108" max-vertical-offset="918">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/includes/aircraft.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5185184" vertical-offset="355" max-vertical-offset="990">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/arr-count.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/pw-iconmenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/components/pw-iconmenu.hbs">
+    <entry file="file://$PROJECT_DIR$/app/templates/components/lt-booking-master.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08985025" vertical-offset="0" max-vertical-offset="601">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/main/booking/active.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/lt-booking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/component/pw-table.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1548">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
           <folding />
         </state>
       </provider>

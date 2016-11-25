@@ -25,9 +25,14 @@ export default Ember.Controller.extend({
       }
     },
 
+    updateUserProfile() {
+      this.transitionToRoute('main.user-profile');
+    },
+
     changePassword() {
       this.transitionToRoute('main.change-password');
     },
+
     logout() {
       this.transitionToRoute('login');
     }

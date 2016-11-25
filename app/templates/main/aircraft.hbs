@@ -1,8 +1,48 @@
+{{pw-page-title title="Aircraft" icon="plane"}}
+
 <div class="container-fluid">
-  {{#unless detailShown}}
-    {{#each aircrafts as |aircraft|}}
-      {{lt-aircraft aircraft=aircraft showDetail=(action "showDetail") }}
-    {{/each}}
-  {{/unless}}
-  {{outlet}}
+    <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pw-panel pw-panel-align-right">
+                <button class="btn btn-sm btn-primary">
+                  {{fa-icon "plus"}} &nbsp;
+                    Add Aircraft
+                </button>
+            </div>
+            <table class="aircraft-list pw-table">
+                <tbody>
+                {{#each aircrafts as |aircraft|}}
+                    <tr>
+                        <td style="width: 300px; vertical-align: middle;">
+                            <img src="images/aircraft/{{aircraft.pictureUrl}}" class="aircraft-pic"/>
+                        </td>
+                        <td class="aircraft-info">
+                            <h1>{{aircraft.name}}</h1>
+
+                            <p>{{aircraft.type}} | {{aircraft.seatingMax}} Seats</p>
+                            <label>Pricing</label>
+
+                            <p>$ {{format-number aircraft.pricing precision=2}}</p>
+
+                            <button class="btn btn-xs"{{action 'showDetail' aircraft}}>
+                                detail
+                              {{fa-icon 'angle-right'}}
+                            </button>
+                        </td>
+                        <td class="col-lg-2 aircraft-status">
+                            <label>Status</label>
+                            <span class="pw-label pw-label-md pw-label-block pw-label-success">Active</span>
+                            <span class="pw-label pw-label-md pw-label-block pw-label-info">Open</span>
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

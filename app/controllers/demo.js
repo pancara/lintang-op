@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   month: 10,
   year: 2016,
+  data:[],
   init() {
     this._super(...arguments);
     var markedDates = [];
@@ -18,6 +19,9 @@ export default Ember.Controller.extend({
 
     selectDate(date) {
       this.set('selectedDate', date);
+    },
+    addData() {
+      this.get('data').push(new Date());
     }
   }
 });

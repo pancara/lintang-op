@@ -1,20 +1,48 @@
 <div class="col-lg-3">
     <label>Booking Code</label>
+
     <p>{{booking.bookingCode}}</p>
 </div>
-<div class="col-lg-3">
+<div class="col-lg-2">
     <label>Aircraft</label>
+
     <p>{{booking.aircraft}}</p>
 </div>
-<div class="col-lg-3">
+<div class="col-lg-2">
     <label>Destination</label>
+
     <p>{{booking.destination}}</p>
 </div>
 <div class="col-lg-2">
     <label>Booking Date</label>
+
     <p>
       {{moment-format booking.date 'DD MMM YYYY'}}
     </p>
+</div>
+<div class="col-lg-2">
+    <label>Status</label>
+  {{#if (eq booking.status 1)}}
+      <span class="label label-success">
+        CONFIRMED
+      </span>
+  {{else}}
+    {{#if (eq booking.status 2)}}
+      <span class="label label-warning">
+        NEED CONFIRMATION
+      </span>
+    {{else}}
+      {{#if (eq booking.status 3)}}
+        <span class="label label-danger">
+        REJECTED
+        </span>
+      {{else}}
+        <span class="label label-primary">
+        COMPLETED
+        </span>
+      {{/if}}
+    {{/if}}
+  {{/if}}
 </div>
 <div class="col-lg-1">
     <img src="./images/tick.svg" {{action "toggleDetail"}} class="toggle-detail"/>

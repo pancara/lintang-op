@@ -1,23 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'ul',
+  tagName: 'div',
   classNames: ['pw-tab-buttons'],
 
   didRender() {
     let buttonCount = this.get('buttons').length;
-    let percentWidth = Math.floor(100 / buttonCount);
-    let buttonEls = this.$('li');
+    let width = Math.floor(100 / buttonCount);
 
-    for (var i = 0; i < buttonEls.length - 1; i++) {
-      Ember.$(buttonEls[i]).css({
-        width: percentWidth + '%'
+    this.$('div.pw-tab-button').each(function (index, el) {
+      var w = index < buttonCount - 1 ? width : 100 + width - (width * buttonCount);
+      Ember.$(el).css({
+        width: w + '%'
       });
-    }
-
-    let width = 100 - (percentWidth * (buttonEls.length - 1));
-    Ember.$(buttonEls[buttonEls.length - 1]).css({
-      width: width + '%'
     });
   },
 

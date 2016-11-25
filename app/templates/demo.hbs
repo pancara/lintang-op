@@ -4,3 +4,10 @@
     {{year}}
 </div>
 {{pw-month-calendar month=month year=year markedDates=markedDates selectDate=(action "selectDate")}}
+
+<div>
+    <button {{action 'addData'}}>Add</button>
+    {{#each data as |d|}}
+      {{d}}
+    {{/each}}
+</div>

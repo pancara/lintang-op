@@ -15,10 +15,10 @@ export default Ember.Controller.extend({
       if (userService.authenticate(operatorId, userId, password)) {
         this.set('hasError', false);
         this.set('success', true);
-        this.set('errorMessage', 'Redirecting to main page...');
+        this.set('errorMessage', 'Redirecting to secured area...');
         var that = this;
         Ember.run.later(this, function () {
-          that.transitionToRoute('main');
+          that.transitionToRoute('main.booking.active');
         }, 1500);
       } else {
         this.set('hasError', true);

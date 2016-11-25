@@ -12,8 +12,31 @@ body {
 .wrapper {
   background: $body_background_color;
   .page-content-wrapper {
-    .container {
+    .page-content {
       width: 100%;
+      h1 {
+        &.page-title {
+          padding: 16px 4px 14px 4px;
+          margin: 0 16px 4px 16px;
+          display: block;
+          border-bottom: 1px solid tint(#937B3D, 80%);
+          background: #FFF;
+          font-size: 12px;
+//          font-family: "Gotham Pro Medium";
+//          color: tint($base_color, 30%);
+          span {
+            color: tint($base_color, 30%);
+            margin-left: 8px;
+            font-size: 14px;
+            display: inline;
+          }
+          > i {
+            color: tint($base_color, 30%);
+            font-size: 16px;
+          }
+        }
+
+      }
     }
   }
 }
@@ -36,5 +59,3 @@ body {
     display: block;
   }
 }
-
-

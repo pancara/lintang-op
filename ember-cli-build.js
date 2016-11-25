@@ -25,14 +25,19 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
 
-  app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+  //app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+  app.import(app.bowerDirectory + '/bootstrap-datepicker/dist/css/bootstrap-datepicker.css');
   app.import(app.bowerDirectory + '/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
     destDir: 'fonts'
   });
-  app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
+  //app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
 
   app.import(app.bowerDirectory + '/jquery/dist/jquery.js');
   app.import(app.bowerDirectory + '/jquery.nicescroll/dist/jquery.nicescroll.min.js');
+  app.import(app.bowerDirectory + '/chart.js/dist/Chart.min.js');
+  app.import(app.bowerDirectory + '/randomcolor/randomColor.js');
+
+  app.import(app.bowerDirectory + '/bootstrap-datepicker/dist/js/bootstrap-datepicker.js');
 
   return app.toTree();
 };
