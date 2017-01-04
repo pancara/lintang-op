@@ -1,6 +1,16 @@
 {{pw-page-title title="Booking" icon="ticket"}}
-{{pw-tab-buttons buttons=buttons
-buttonClick=(action 'buttonClick')
-activeRoute=activeRoute
-}}
-{{outlet}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+          {{pw-tab-buttons buttons=buttons
+          buttonClick=(action 'buttonClick')
+          activeRoute=activeRoute
+          }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+          {{outlet}}
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('service:user-service', 'Unit | Service | user service', {
+moduleFor('service:local-storage', 'Unit | Service | local storage', {
   // Specify the other units that are required for this test.
   // needs: ['service:foo']
 });
@@ -9,10 +9,4 @@ moduleFor('service:user-service', 'Unit | Service | user service', {
 test('it exists', function(assert) {
   let service = this.subject();
   assert.ok(service);
-});
-
-test('authenticate', function(assert) {
-let service =this.subject();
-  var result = service.authenticate('abcd','operator', 'abc');
-  assert.ok(result, 'Passed');
 });

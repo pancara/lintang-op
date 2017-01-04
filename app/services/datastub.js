@@ -15,9 +15,10 @@ export default Ember.Service.extend({
     let mnuBooking = this.createMenuObject('main.booking.active', 'ticket', 'BOOKING', false, null);
     let mnuAircraft = this.createMenuObject('main.aircraft', 'plane', 'AIRCRAFT', false, null);
     let mnuSales = this.createMenuObject('main.sales', 'area-chart', 'SALES', false, null);
+    let mnuDisclaimer = this.createMenuObject('main.disclaimer', 'exclamation-circle', 'DISCLAIMER', false, null);
 
     //let menus = [mnuDashboard, mnuProfile, mnuBooking, mnuAircraft, mnuSales];
-    let menus = [mnuProfile, mnuBooking, mnuAircraft, mnuSales];
+    let menus = [mnuProfile, mnuBooking, mnuAircraft, mnuSales, mnuDisclaimer];
     return menus;
   },
 
@@ -46,13 +47,13 @@ export default Ember.Service.extend({
 
   getBookings() {
     var bookingCode = 1230;
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < 4; i++) {
       this.bookings.push(Booking.create({
         id: 1,
         date: new Date(),
         bookingCode: '1234-' + (bookingCode + i),
         aircraft: 'CXF-1999',
-        destination: 'CKG-HLM',
+        destination: 'WIII-WIHH',
         passengers: [
           {
             name: 'Mr. Claudius Smith',
@@ -88,7 +89,7 @@ export default Ember.Service.extend({
         date: new Date(),
         bookingCode: '1234-' + (bookingCode + i),
         aircraft: 'CXF-1999',
-        destination: 'CKG-HLM',
+        destination: 'WIII-WIHH',
         passengers: [
           {
             name: 'Mr. Claudius Smith',
@@ -117,8 +118,9 @@ export default Ember.Service.extend({
     return this.historyBookings;
   },
   getAircrafts() {
+    var aircrafts = [];
     for (var i = 0; i < 4; i++) {
-      this.aircrafts.push(Aircraft.create({
+      aircrafts.push(Aircraft.create({
         id: i,
         name: 'CR-0001' + i,
         type: 'Super Midsize Jet',
@@ -133,7 +135,7 @@ export default Ember.Service.extend({
         pictureUrl: 'private-jet' + (i % 2 + 1) + '.jpg'
       }));
     }
-    return this.aircrafts;
+    return aircrafts;
   },
 
   findAircraftById(id) {
@@ -260,10 +262,10 @@ export default Ember.Service.extend({
       'Entry Level',
       'Turbo Prop',
       'Prop',
-      'Heli'];
+      'Heli',
+      'Test'];
 
     var aircraftTypes = [];
-    var id = 1;
 
     aircraftTypeNames.forEach(function (item, index) {
       aircraftTypes.push({
@@ -273,8 +275,10 @@ export default Ember.Service.extend({
       });
     });
 
-    console.log(aircraftTypes);
     return aircraftTypes;
+  },
 
+  getGenderList() {
+    return ['MALE', 'FEMALE'];
   }
 });

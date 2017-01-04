@@ -24,5 +24,23 @@ export default Ember.Service.extend({
       cursorborderradius: "2px",
       zindex: 99999
     });
+  },
+
+  transitionEventCallback() {
+    var t,
+      el = document.createElement("fakeelement");
+
+    var transitions = {
+      "transition": "transitionend",
+      "OTransition": "oTransitionEnd",
+      "MozTransition": "transitionend",
+      "WebkitTransition": "webkitTransitionEnd"
+    }
+
+    for (t in transitions) {
+      if (el.style[t] !== undefined) {
+        return transitions[t];
+      }
+    }
   }
 });

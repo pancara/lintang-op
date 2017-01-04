@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: 'div',
   classNames: ['pw-month-calendar'],
   month: 11,
   year: 2015,
@@ -53,7 +54,9 @@ export default Ember.Component.extend({
     clickDate(date) {
       this.sendAction('selectDate', date);
     },
+
     nextMonth() {
+      console.log('next month');
       var month = this.get('month');
       var year = this.get('year');
       month++;
@@ -61,9 +64,6 @@ export default Ember.Component.extend({
         month = 0;
         year++;
       }
-      console.log(month);
-      console.log(year);
-
       this.setProperties({
         month: month,
         year: year
@@ -71,6 +71,7 @@ export default Ember.Component.extend({
     },
 
     previousMonth() {
+      console.log('previous');
       var month = this.get('month');
       var year = this.get('year');
       month--;
@@ -79,13 +80,10 @@ export default Ember.Component.extend({
         year--;
       }
 
-      console.log(month);
-      console.log(year);
       this.setProperties({
         month: month,
         year: year
       });
-
     }
 
   }

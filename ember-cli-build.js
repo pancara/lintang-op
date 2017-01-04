@@ -9,6 +9,8 @@ module.exports = function(defaults) {
       enabled: false,
       exclude: ['images/aircraft', 'images/mock']
     }
+
+
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -27,6 +29,7 @@ module.exports = function(defaults) {
 
   //app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
   app.import(app.bowerDirectory + '/bootstrap-datepicker/dist/css/bootstrap-datepicker.css');
+  app.import(app.bowerDirectory + '/pw-bootstrap-timepicker/css/timepicker.css');
   app.import(app.bowerDirectory + '/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
     destDir: 'fonts'
   });
@@ -38,6 +41,9 @@ module.exports = function(defaults) {
   app.import(app.bowerDirectory + '/randomcolor/randomColor.js');
 
   app.import(app.bowerDirectory + '/bootstrap-datepicker/dist/js/bootstrap-datepicker.js');
+  app.import(app.bowerDirectory + '/pw-bootstrap-timepicker/js/bootstrap-timepicker.js');
+  app.import(app.bowerDirectory + '/js-sha256/build/sha256.min.js');
+  app.import(app.bowerDirectory + '/crypto-js/crypto-js.js');
 
   return app.toTree();
 };

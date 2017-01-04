@@ -6,6 +6,9 @@ export default Ember.Component.extend({
   actions: {
     toggleDetail(booking) {
       this.toggleProperty('shownDetail');
+    },
+    decline(booking) {
+      this.sendAction('onDecline', booking);
     }
   }
 });

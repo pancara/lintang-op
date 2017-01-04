@@ -19,7 +19,7 @@ body {
           padding: 16px 4px 14px 4px;
           margin: 0 16px 4px 16px;
           display: block;
-          border-bottom: 1px solid tint(#937B3D, 80%);
+          border-bottom: 1px solid tint(#937B3D, 90%);
           background: #FFF;
           font-size: 12px;
 //          font-family: "Gotham Pro Medium";
@@ -36,6 +36,12 @@ body {
           }
         }
 
+      }
+
+      p.information {
+        font-size: 14px;
+        color: #666;
+        padding-top: 18px;
       }
     }
   }

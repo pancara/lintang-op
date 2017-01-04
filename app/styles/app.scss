@@ -25,11 +25,16 @@
 @import "component/pw-iconmenu";
 @import "component/pw-sidebar";
 @import "component/pw-tile";
+@import "component/pw-switch";
 @import "component/lt-booking";
 @import "component/lt-aircraft";
+@import "component/pw-progress-indicator";
 
 @import "includes/login";
 @import "includes/aircraft";
 @import "includes/newbooking";
 @import "includes/sales";
 @import "includes/main";
+
+
+@import "demo";

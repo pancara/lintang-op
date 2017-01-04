@@ -11,9 +11,12 @@
           color: #666;
           font-size: 13px;
           button {
-            background: #EEE;
+            background: #F0F0F0;
             border: 1px solid #DDD;
             margin-right: 8px;
+          }
+          i.fa {
+            font-size: 13px !important;
           }
         }
       }
@@ -25,10 +28,15 @@
         .button-panel {
           padding: 0 0 0 0;
           text-align: center;
+          div {
+            margin: auto auto auto auto;
+            width: 30px;
+          }
           button {
             padding: 2px;
-            width: 30px;
             margin-top: 4px;
+            width: 100%;
+
             i {
               font-size: 14px;
               font-weight: bold;
@@ -37,6 +45,7 @@
             &:first-child {
               margin-top: 32px;
             }
+
           }
         }
       }

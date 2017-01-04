@@ -3,24 +3,28 @@
     {{#if monthNavigation}}
         <tr>
             <th>
-              {{fa-icon 'chevron-left' click=(action "previousMonth") size="lg" }}
+                <button {{action "previousMonth"}}>
+                  {{fa-icon 'chevron-left' size="lg" }}
+                </button>
             </th>
             <th colspan="5">
               {{date-month-name month}} {{year}}
             </th>
             <th>
-              {{fa-icon 'chevron-right' click=(action "nextMonth") size="lg" }}
+                <button {{action "nextMonth"}}>
+                  {{fa-icon 'chevron-right' size="lg" }}
+                </button>
             </th>
         </tr>
     {{/if}}
     <tr>
-        <th>Sun</th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
+        <th><span>Sun</span></th>
+        <th><span>Mon</span></th>
+        <th><span>Tue</span></th>
+        <th><span>Wed</span></th>
+        <th><span>Thu</span></th>
+        <th><span>Fri</span></th>
+        <th><span>Sat</span></th>
     </tr>
     </thead>
     <tbody>

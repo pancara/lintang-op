@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-lg-3">
+        <span class="field">Date Start</span>
+    </div>
+    <div class="col-lg-5">
+      {{pw-datepicker value=startDate register-as=datepickerStartDate}}
+    </div>
+    <div class="col-lg-4">
+      {{pw-timepicker value=startDate}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3"><span class="field">Date End</span></div>
+    <div class="col-lg-5">
+      {{pw-datepicker value=endDate register-as=datepickerEndDate}}
+    </div>
+    <div class="col-lg-4">
+      {{pw-timepicker value=endDate}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3">
+        <span class="field">Special Price</span>
+    </div>
+    <div class="col-lg-1">
+      {{pw-switch checked=isSpecialPrice}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-lg-offset-3">
+      {{pw-number-field value=pricePercentage min=0 max=100 disabled=(not isSpecialPrice)}}
+    </div>
+    <div class="col-lg-6">
+        <span>% (percent)</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-9 col-lg-offset-3">
+        <button class="btn btn-success btn-sm" {{action "save"}}>
+          {{fa-icon "check"}} &nbsp; Save
+        </button>
+        <button class="btn btn-danger btn-sm" {{action "cancel"}}>
+          {{fa-icon "cro"}} &nbsp; Cancel
+        </button>
+    </div>
+</div>

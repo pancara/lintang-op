@@ -1,11 +1,13 @@
-$pw_table_row_head_bg: lighten(#7E734A, 50);
+$pw_table_row_head_bg: lighten(#DBB453, 35);
 $pw_table_row_bg: #FFF;
-$pw_table_row_bg_hover: tint(#BEAB75, 90);
+$pw_table_row_bg_hover: tint(#a0dffc, 80);
+$pw_table_border_color: rgba(245, 229, 148, 0.1);
 
 table.pw-table {
   width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed;
+//  font-family: "Gotham Pro";
   // Cells
   > thead,
   > tbody,
@@ -25,7 +27,6 @@ table.pw-table {
       color: #333;
       font-weight: normal;
       background: $pw_table_row_head_bg;
-      border: 1px solid #CCC !important;
       &.pw-number {
         text-align: right;
       }
@@ -35,27 +36,38 @@ table.pw-table {
     tr {
       td {
         font-size: 12px;
-        color: #666;
+        color: #555;
         @include transition(background 500ms ease-out);
         &.pw-number {
           text-align: right;
         }
       }
+    }
+  }
 
-      &:hover {
-        td {
-          background: $pw_table_row_bg_hover;
-          @include transition(background 200ms ease-in-out);
+  &.pw-highlighted {
+    tbody {
+      tr {
+        &:hover {
+          td {
+            background: $pw_table_row_bg_hover;
+            @include transition(background 200ms ease-in-out);
+          }
         }
       }
     }
   }
 
   &.pw-bordered {
+    thead {
+      th {
+        border: 1px solid $pw_table_border_color !important;
+      }
+    }
     tbody {
       tr {
         td {
-          border: 1px solid #CCC !important;
+          border: 1px solid $pw_table_border_color !important;
         }
       }
     }
@@ -65,13 +77,20 @@ table.pw-table {
     tbody {
       tr:nth-child(even) {
         td {
-          background: #F9F9F9;
+          background: tint($pw_table_row_head_bg, 40);
           @include transition(background 500ms ease-out);
         }
-        &:hover {
-          td {
-            background: $pw_table_row_bg_hover;
-            @include transition(background 200ms ease-in-out);
+      }
+    }
+
+    &.pw-highlighted {
+      tbody {
+        tr {
+          &:hover {
+            td {
+              background: $pw_table_row_bg_hover;
+              @include transition(background 200ms ease-in-out);
+            }
           }
         }
       }

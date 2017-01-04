@@ -1,78 +1,81 @@
 <div class="panel-body">
-    <div class="row" style="padding: 0 0 0 0;">
-        <div class="col-lg-6 form">
-            <div class="row">
-                <div class="col-lg-3">
-                    <span class="field">Date Start</span>
-                </div>
-                <div class="col-lg-9">
-                  {{pw-datepicker date=startDate register-as=datepickerStartDate}}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3"><span class="field">Date End</span></div>
-                <div class="col-lg-9">
-                  {{pw-datepicker date=endDate register-as=datepickerEndDate}}
-                </div>
-            </div>
-
-            <div class="row aircraft-list">
-                <div class="col-lg-3">
-                    <span class="field">Aircraft</span>
-                </div>
-                <div class="col-lg-4">
-                  {{pw-select
-                  options=aircraftAvailable
-                  size=6
-                  itemAction=(action 'itemAvailableAction') }}
-                </div>
-                <div class="col-lg-1 button-panel">
-                    <button class="btn btn-xs btn-success"
-                      {{action 'includeAllAircraft'}}>
-                      {{fa-icon "angle-double-right"}}
-                    </button>
-                    <button class="btn btn-xs btn-success"
-                      {{action 'includeAircraft'}}>
-                      {{fa-icon "angle-right"}}
-                    </button>
-                    <button class="btn btn-xs btn-danger"
-                      {{action 'excludeAircraft'}}>
-                      {{fa-icon "angle-left"}}
-                    </button>
-                    <button class="btn btn-xs btn-danger"
-                      {{action 'excludeAllAircraft'}}>
-                      {{fa-icon "angle-double-left"}}
-                    </button>
-                </div>
-                <div class="col-lg-4">
-                  {{pw-select
-                  options=aircraftSelected
-                  size=6
-                  itemAction=(action 'itemSelectedAction')}}
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-lg-2">
+            <span class="field">Date Start</span>
         </div>
-        <div class="col-lg-6">
-            <div class="row">
-                <div class="col-lg-4">
-                    <span class="field">Aircraft Type</span>
-                </div>
-                <div class="col-lg-5">
-                    {{pw-multicheckbox options=aircraftTypes name='aircraft-types' register-as=checkboxAircraftTypes}}
-                </div>
-            </div>
+        <div class="col-lg-4">
+          {{pw-datepicker value=startDate register-as=datepickerStartDate}}
         </div>
     </div>
-    <div class="row" style="padding: 0 0 0 0;">
-        <div class="col-lg-6">
-            <div class="row">
-                <div class="col-lg-9 col-lg-offset-3">
-                    <button class="btn btn-primary btn-sm"{{action 'applyFilter'}}>{{fa-icon "filter"}} &nbsp; Apply
-                        Filter
-                    </button>
-                </div>
-            </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <span class="field">Date End</span>
+        </div>
+        <div class="col-lg-4">
+          {{pw-datepicker value=endDate register-as=datepickerEndDate}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <span class="field">Aircraft Type</span>
+        </div>
+        <div class="col-lg-3">
+          {{pw-multicheckbox options=(arr-slice aircraftTypes 2 0) name='aircraft-types' register-as=checkboxAircraftTypes_1}}
+        </div>
+        <div class="col-lg-4">
+          {{pw-multicheckbox options=(arr-slice aircraftTypes 2 1) name='aircraft-types' register-as=checkboxAircraftTypes_2}}
+        </div>
+    </div>
+
+    <div class="row aircraft-list">
+        <div class="col-lg-2">
+            <span class="field">Aircraft</span>
         </div>
 
+        <div class="col-lg-3">
+          {{pw-select
+          options=aircraftAvailable
+          size=6
+          itemAction=(action 'itemAvailableAction')
+          register-as=componentaircraftAvailable}}
+        </div>
+        <div class="col-lg-1 button-panel">
+            <div>
+                <button class="btn btn-xs btn-success"
+                  {{action 'includeAllAircraft'}}>
+                  {{fa-icon "angle-double-right"}}
+                </button>
+                <button class="btn btn-xs btn-success"
+                  {{action 'includeAircraft'}}>
+                  {{fa-icon "angle-right"}}
+                </button>
+                <button class="btn btn-xs btn-danger"
+                  {{action 'excludeAircraft'}}>
+                  {{fa-icon "angle-left"}}
+                </button>
+                <button class="btn btn-xs btn-danger"
+                  {{action 'excludeAllAircraft'}}>
+                  {{fa-icon "angle-double-left"}}
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          {{pw-select
+          options=aircraftSelected
+          size=6
+          itemAction=(action 'itemSelectedAction')
+          register-as=componentaircraftSelected}}
+        </div>
+    </div>
+
+
+    <div class="row" style="padding: 0 0 0 0;">
+        <div class="col-lg-6 col-lg-offset-2">
+            <button class="btn btn-primary btn-sm"{{action 'applyFilter'}}>{{fa-icon "filter"}} &nbsp; Apply
+                Filter
+            </button>
+        </div>
     </div>
 </div>

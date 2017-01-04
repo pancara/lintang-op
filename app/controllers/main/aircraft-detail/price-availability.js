@@ -11,6 +11,7 @@ export default Ember.Controller.extend({
     this.set('year', date.getFullYear());
 
     this.populateMarkedDates();
+    this.populateBookings() ;
   },
 
   populateMarkedDates() {
@@ -28,10 +29,19 @@ export default Ember.Controller.extend({
 
     this.set('markedDates', markedDates);
   },
+
+  populateBookings() {
+    this.set('bookings', this.get('datastub').getBookings());
+  },
+
   actions: {
+    addTask() {
+      this.set('showAddTask', true);
+    },
     selectDate(date) {
       this.set('selectedDate', date);
     },
+
     nextMonth() {
       var month = this.get('month');
       var year = this.get('year');
@@ -40,10 +50,6 @@ export default Ember.Controller.extend({
         month = 0;
         year++;
       }
-      console.log('next');
-      console.log(month);
-      console.log(year);
-
       this.setProperties({
         month: month,
         year: year
@@ -51,7 +57,6 @@ export default Ember.Controller.extend({
     },
 
     previousMonth() {
-      console.log('previous');
       var month = this.get('month');
       var year = this.get('year');
       month--;
@@ -60,13 +65,18 @@ export default Ember.Controller.extend({
         year--;
       }
 
-      console.log(month);
-      console.log(year);
       this.setProperties({
         month: month,
         year: year
       });
+    },
 
+    saveTask(param) {
+      var aircraft = this.get('model');
+      this.set('showAddTask', false);
+    },
+    cancelTask() {
+      this.set('showAddTask', false);
     }
   }
 });

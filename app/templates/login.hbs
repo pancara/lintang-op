@@ -9,7 +9,7 @@
         </div>
 
         <div class="login-content">
-            {{#if (or hasError success)}}
+          {{#if (or hasError success)}}
               <div class="error-box">
                   <div class="error-box-content {{if hasError "error"}} {{if success "success"}}">
                     {{#if hasError}}
@@ -24,7 +24,12 @@
                   <div class="tick">&nbsp;</div>
               </div>
           {{/if}}
-          {{form-login doLogin=(action "doLogin") rememberMe=rememberMe}}
+
+          {{form-login doLogin=(action "doLogin")
+          userId=userId
+          password=password
+          rememberMe=rememberMe
+          register-as=form-login}}
         </div>
 
         <div class="login-footer">

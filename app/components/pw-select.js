@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import RegisterAsComponent from '../mixins/register-as-component';
 
-export default Ember.Component.extend({
+export default Ember.Component.extend(RegisterAsComponent, {
   tagName: 'select',
   classNames: ['form-control'],
   //attribute

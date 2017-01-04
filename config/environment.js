@@ -16,7 +16,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    'connect-src': "'self' http://google.com",
+    contentSecurityPolicyHeader: 'Content-Security-Policy'
   };
 
   if (environment === 'development') {

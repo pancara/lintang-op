@@ -1,13 +1,5 @@
 <div class="row">
-    <div class="col-lg-12" style="padding-top: 8px;">
-        <button class="btn btn-sm btn-success pull-right">
-            {{fa-icon "plus"}} &nbsp;
-            Add Task
-        </button>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-12" style="padding: 0 0;">
+    <div class="col-lg-12">
         <table class="aircraft-detail">
             <tr>
                 <td class="field" style="width: 200px;">Cost/Hour</td>
@@ -25,29 +17,68 @@
     </div>
 </div>
 
-<div class="row aircraft-availability-panel">
-    <div class="col-lg-1">
-      {{fa-icon "chevron-left" size="lg" click=(action "previousMonth")}}
-    </div>
-    <div class="col-lg-10">
-        <span class="title">
-          {{date-month-name month}}
-          {{year}}
-        </span>
-    </div>
-    <div class="col-lg-1">
-      {{fa-icon "chevron-right" size="lg" click=(action "nextMonth")}}
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-lg-12" style="padding: 0 0; text-align: center;">
-      {{pw-month-calendar
-      month=month
-      year=year
-      markedDates=markedDates
-      monthNavigation=false
-      selectDate=(action "selectDate")}}
+<div class="row" style="margin-top: 16px;">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              Calendar
+            </div>
+            <div class="panel-body">
+              {{pw-month-calendar
+              month=month
+              year=year
+              markedDates=markedDates
+              monthNavigation=true
+              selectDate=(action "selectDate")}}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              {{#if showAddTask}}
+                {{fa-icon "plus"}} New Task
+              {{else}}
+                {{fa-icon "list"}} Task List
+              {{/if}}
+            </div>
+
+          {{#if showAddTask }}
+              <div class="panel-body">
+                {{pw-aircraft-add-task register-as=panelAddTask save=(action 'saveTask') cancel=(action 'cancelTask')}}
+              </div>
+          {{else}}
+              <div class="panel-body">
+                  <div style="margin: 0px 0px 8px 0px;">
+                      <button class="btn btn-xs btn-warning"  {{action "addTask"}}>
+                        {{fa-icon "plus"}} &nbsp;
+                          Add Task
+                      </button>
+                  </div>
+                  <table class="pw-table pw-bordered">
+                      <thead>
+                      <tr>
+                          <th>No</th>
+                          <th>Booking Code</th>
+                          <th>Date</th>
+                          <th>Route</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      {{#each bookings as |booking index|}}
+                          <tr>
+                              <td>{{add index 1}}.</td>
+                              <td>{{booking.bookingCode}}</td>
+                              <td>{{booking.date}}</td>
+                              <td>{{booking.destination}}</td>
+                          </tr>
+                      {{/each}}
+                      </tbody>
+                  </table>
+              </div>
+          {{/if}}
+        </div>
     </div>
 </div>
 

@@ -21,6 +21,8 @@
     <div class="row">
         <div class="col-lg-12">
           {{pw-sales-filter
+          startDate=startDate
+          endDate=endDate
           aircraftAvailable=aircraftAvailable
           aircraftTypes=aircraftTypes
           register-as=filterSales
@@ -42,7 +44,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <table class="pw-table pw-zebra pw-bordered">
+                    <table class="pw-table pw-zebra pw-highlighted pw-bordered">
                         <thead>
                         <tr>
                             <th colspan="7" style="text-align: center;">List of Bookings</th>

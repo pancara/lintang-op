@@ -1,6 +1,5 @@
 <div class="col-lg-12">
-
-    <table class="table passenger">
+    <table class="pw-table passenger">
         <thead>
         <tr>
             <th colspan="4">Booking Detail</th>
@@ -13,17 +12,17 @@
         </thead>
         <tbody>
         {{#each booking.passengers as |passenger index|}}
-        <tr>
-            <td style="width: 10px;">{{add index 1}}.</td>
-            <td style="width: 220px;">{{passenger.name}}</td>
-            <td>{{passenger.gender}}</td>
-            <td>{{passenger.passportNumber}}</td>
-        </tr>
+            <tr>
+                <td style="width: 10px;">{{add index 1}}.</td>
+                <td style="width: 220px;">{{passenger.name}}</td>
+                <td>{{passenger.gender}}</td>
+                <td>{{passenger.passportNumber}}</td>
+            </tr>
         {{/each}}
         </tbody>
     </table>
 
-    <table class="table">
+    <table class="pw-table">
         <tbody>
         <tr>
             <td style="width: 245px;">Charter Prices</td>
@@ -57,9 +56,17 @@
         </tr>
         </tbody>
     </table>
-    <div class="bottom">
-        <button>CONFIRM</button>
-        <button>REJECT</button>
-    </div>
+    {{#if (eq booking.status 2)}}
+      <div class="bottom">
+          <button class="btn btn-success btn-sm">
+            {{fa-icon "check"}} &nbsp;
+              CONFIRM
+          </button>
+          <button class="btn btn-warning btn-sm" {{action "decline"}}>
+            {{fa-icon "remove"}} &nbsp;
+              DECLINE
+          </button>
+      </div>
+    {{/if}}
 </div>
 

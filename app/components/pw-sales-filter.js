@@ -110,14 +110,20 @@ export default Ember.Component.extend(RegisterAsComponent, {
     },
 
     applyFilter() {
+      var aircraftTypes_1 = this.get('checkboxAircraftTypes_1').getSelected();
+      var aircraftTypes_2 = this.get('checkboxAircraftTypes_2').getSelected();
+
+      var newSelected = [];
+      var arrayUtil = ArrayUtil.create({});
+      arrayUtil.join(aircraftTypes_1, aircraftTypes_2, newSelected);
+
       var filter = {
         startDate: this.get('datepickerStartDate').get('value'),
         endDate: this.get('datepickerEndDate').get('value'),
         aircrafts: this.get('aircraftSelected'),
-        aircraftTypes: this.get('checkboxAircraftTypes').getSelected()
+        aircraftTypes: newSelected
       };
 
-      console.log(filter);
       this.sendAction('applyFilter', filter);
     }
   }

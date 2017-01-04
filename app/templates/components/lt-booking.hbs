@@ -1,4 +1,4 @@
 {{lt-booking-master booking=booking toggleDetail=(action "toggleDetail") shownDetail=shownDetail}}
 {{#if shownDetail }}
-  {{lt-booking-detail booking=booking}}
+  {{lt-booking-detail booking=booking showOnly=showOnly onDecline=(action "decline")}}
 {{/if}}

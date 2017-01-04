@@ -1,19 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  init() {
+    this._super();
+
+    this.createMenus();
+    this.populateNotifications();
+  },
 
   createMenus: function () {
     let menus = this.get('datastub').getMainMenu();
     this.set('menus', menus);
   },
 
-  init() {
-    this.createMenus();
-    this.populateNotifications();
-  },
-
   populateNotifications() {
-    this.set('notifications',  this.get('datastub').getNotifications());
+    this.set('notifications', this.get('datastub').getNotifications());
   },
 
   actions: {

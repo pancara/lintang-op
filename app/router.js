@@ -10,7 +10,6 @@ Router.map(function () {
   this.route('forget-password');
 
   this.route('main', function () {
-
     this.route('change-password');
     this.route('user-profile', function () {
       this.route('update');
@@ -36,6 +35,7 @@ Router.map(function () {
     this.route('operator-profile', function () {
       this.route('update');
     });
+    this.route('disclaimer');
   });
 
   this.route('help');

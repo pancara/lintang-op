@@ -29,15 +29,14 @@
 
                             <p>$ {{format-number aircraft.pricing precision=2}}</p>
 
-                            <button class="btn btn-xs"{{action 'showDetail' aircraft}}>
+                            <button class="btn btn-primary btn-xs"{{action 'showDetail' aircraft}}>
                                 detail
-                              {{fa-icon 'angle-right'}}
                             </button>
                         </td>
                         <td class="col-lg-2 aircraft-status">
                             <label>Status</label>
-                            <span class="pw-label pw-label-md pw-label-block pw-label-success">Active</span>
-                            <span class="pw-label pw-label-md pw-label-block pw-label-info">Open</span>
+                            <br/>
+                            <span class="pw-label pw-label-sm pw-label-success">Active</span>
                         </td>
                     </tr>
                 {{/each}}

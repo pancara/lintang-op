@@ -1,0 +1,12 @@
+.demo-anim {
+  background: #FF0000;
+  &.start-anim {
+    opacity: 0.0;
+    @include transition(opacity 700ms ease-in-out);
+    &.finish-anim {
+      background: #00FF00;
+      opacity: 1.0;
+    }
+  }
+
+}

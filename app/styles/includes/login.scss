@@ -80,17 +80,17 @@
       div {
         margin-top: 0px;
         .pw-input {
-          font-size: 13px;
+          font-size: 16px;
           margin-bottom: 16px;
           background: darken($input-base-color, 3);
           border: 1px solid #000;
-          padding: 8px 12px 8px 12px;
+          padding: 10px 12px 10px 12px;
           color: #A18D58;
           outline: none;
           border-radius: 4px;
           border: 1px solid $input-base-color;
           @include placeholder();
-          @include input-placeholder()
+          @include input-placeholder();
           width: 100%;
           &:focus {
             background: lighten($input-base-color, 2);;

@@ -3,7 +3,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   month: 10,
   year: 2016,
-  data:[],
+  data: [],
+  inProgress:false,
   init() {
     this._super(...arguments);
     var markedDates = [];
@@ -22,6 +23,21 @@ export default Ember.Controller.extend({
     },
     addData() {
       this.get('data').push(new Date());
+    },
+
+    animate() {
+      this.set('inProgress', true);
+      var callback = this.get('ui-service').transitionEventCallback();
+      var that = this;
+      $('.demo-anim')
+        .removeClass('start-anim')
+        .removeClass('finish-anim')
+        .addClass('start-anim')
+        .one(callback, function (event) {
+          $('.demo-anim').addClass('finish-anim');
+          that.set('inProgress', false);
+        });
+
     }
   }
 });

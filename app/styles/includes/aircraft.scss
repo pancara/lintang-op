@@ -68,12 +68,13 @@ table.aircraft-list {
 }
 
 table.aircraft-detail {
-  background: #FBF8EF;
+//  background: #FBF8EF;
   margin-top: 16px;
   width: 100%;
+  border-collapse: collapse;
   td {
     padding: 10px 16px 10px 32px;
-    border-bottom: 1px solid #E7E0CD;
+    border-bottom: 1px solid #FBF8EF;
     vertical-align: top;
 
     &.field {
@@ -81,14 +82,14 @@ table.aircraft-detail {
       color: #666;
 
       &.images {
-        background: #E7E0CD;
+//        background: #E7E0CD;
       }
     }
     &.value {
       font-size: 16px;
       color: $text-color;
       &.images {
-        background: #E7E0CD;
+//        background: #E7E0CD;
       }
 
       img {

@@ -8,12 +8,12 @@ export default Ember.Component.extend({
     let buttonCount = this.get('buttons').length;
     let width = Math.floor(100 / buttonCount);
 
-    this.$('div.pw-tab-button').each(function (index, el) {
-      var w = index < buttonCount - 1 ? width : 100 + width - (width * buttonCount);
-      Ember.$(el).css({
-        width: w + '%'
-      });
-    });
+    //this.$('div.pw-tab-button').each(function (index, el) {
+    //  var w = index < buttonCount - 1 ? width : 100 + width - (width * buttonCount);
+    //  Ember.$(el).css({
+    //    width: w + '%'
+    //  });
+    //});
   },
 
   actions: {
