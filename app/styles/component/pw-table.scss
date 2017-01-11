@@ -1,13 +1,13 @@
-$pw_table_row_head_bg: lighten(#DBB453, 35);
+$pw_table_row_head_bg: lighten(#999, 35);
 $pw_table_row_bg: #FFF;
 $pw_table_row_bg_hover: tint(#a0dffc, 80);
-$pw_table_border_color: rgba(245, 229, 148, 0.1);
+$pw_table_border_color: rgba(220, 220, 220, 0.3);
 
 table.pw-table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: $line-height-computed;
-//  font-family: "Gotham Pro";
+  margin-bottom: 4px;
+  //  font-family: "Gotham Pro";
   // Cells
   > thead,
   > tbody,
@@ -23,10 +23,11 @@ table.pw-table {
   }
   thead {
     th {
-      font-size: 13px;
-      color: #333;
+      font-size: 12px;
+      color: #777;
       font-weight: normal;
       background: $pw_table_row_head_bg;
+      border-left: 1px solid #FFF;
       &.pw-number {
         text-align: right;
       }
@@ -36,7 +37,7 @@ table.pw-table {
     tr {
       td {
         font-size: 12px;
-        color: #555;
+        color: #888;
         @include transition(background 500ms ease-out);
         &.pw-number {
           text-align: right;
@@ -61,13 +62,13 @@ table.pw-table {
   &.pw-bordered {
     thead {
       th {
-        border: 1px solid $pw_table_border_color !important;
+        border-bottom: 1px solid #FFF !important;
       }
     }
     tbody {
       tr {
         td {
-          border: 1px solid $pw_table_border_color !important;
+          border-bottom: 1px solid $pw_table_border_color !important;
         }
       }
     }

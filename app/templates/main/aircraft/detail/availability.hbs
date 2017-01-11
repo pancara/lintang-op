@@ -1,0 +1,92 @@
+<div class="panel">
+    <div class="panel-body">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                  {{pw-month-calendar
+                  register-as=monthCalendar
+                  markedDates=markedDates
+                  monthNavigation=true
+                  month=month
+                  year=year
+                  }}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <table class="pw-table pw-bordered">
+                <thead>
+                <tr>
+                    <th style="width: 10px;"></th>
+                    <th style="width: 300px;">Date</th>
+                    <th style="width: 100px;">Reason</th>
+                    <th style="width: auto;">Description</th>
+                    <th style="width: 160px;"></th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each data.data as |booking index |}}
+                    <tr>
+                        <td>{{ add index 1 }}.</td>
+                        <td>{{moment-format booking.date 'DD MMMM YYYY'}}</td>
+                        <td>{{booking.reason}}</td>
+                        <td>{{booking.description}}</td>
+                        <td>
+                            <button class="btn btn-warning btn-xs" {{action "editBooking" booking}}>edit</button>
+                            <button class="btn btn-danger btn-xs" {{action "deleteBooking" booking}}>delete</button>
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td></td>
+                    <td>
+                      {{#unless editMode}}
+                          <button class="btn btn-success btn-xs" {{action "addBooking"}}>
+                              add
+                          </button>
+                      {{/unless}}
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+
+          {{pw-paging register-as=paging refresh=(action "refresh") }}
+
+          {{#if editMode}}
+              <div class="panel panel-default" style="margin-top: 8px;">
+                  <div class="panel-body">
+                      <div class="row">
+                          <div class="col-lg-4"><span class="field">Booking Date Time :</span></div>
+                          <div class="col-lg-8">{{pw-datepicker value=bookingDate disabled=(if selectedBooking true false)}}</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-4"><span class="field">Reason :</span></div>
+                          <div class="col-lg-8">
+                              <select class="form-control"
+                                      onchange={{action "selectBookingReason" value="target.value"}}>
+                                  <option>-</option>
+                                {{#each bookingReasons as |reasonOption|}}
+                                    <option value={{reasonOption}} selected={{eq reason reasonOption}}>{{reasonOption}}</option>
+                                {{/each}}
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-4"><span class="field">Description :</span></div>
+                          <div class="col-lg-8">{{textarea class="form-control" value=description }}</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-8 col-lg-offset-4">
+                              <button class="btn btn-success btn-sm" {{action "saveData"}}>&nbsp;Save&nbsp;</button>
+                              <button class="btn btn-danger btn-sm" {{action "cancelData"}}>Cancel</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          {{/if}}
+
+        </div>
+    </div>
+</div>

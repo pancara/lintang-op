@@ -11,9 +11,9 @@
 
 .pw-label {
   display: inline;
-  padding:  4px 6px 4px 6px;
-  font-size: 75%;
-  font-weight: bold;
+  padding: 4px 6px 4px 6px;
+  font-size: 10px;
+  //  font-weight: bold;
   line-height: 1;
   color: $pw_label_color;
   text-align: center;
@@ -94,3 +94,37 @@ a {
 .pw-label-danger {
   @include label-variant($pw_label_danger_bg);
 }
+
+.pw-label-danger {
+  @include label-variant($pw_label_danger_bg);
+}
+
+.pw-label-blue {
+  @include label-variant(#0073b7);
+}
+
+.pw-label-orange {
+  @include label-variant(#ffa812);
+}
+
+.pw-label-aqua {
+  @include label-variant(#00c0ef);
+}
+
+.pw-label-aqua {
+  @include label-variant(#00b29e);
+}
+
+.pw-label-cyan {
+  @include label-variant(#00b29e);
+}
+
+.pw-label-purple {
+  @include label-variant(#ba79cb);
+}
+
+.pw-label-amethyst {
+  @include label-variant(#5a3a68);
+}
+
+

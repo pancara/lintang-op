@@ -1,37 +1,42 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  baseUrl: 'json/',
+  uiService: Ember.inject.service('ui-service'),
+  baseUrl: 'http://dev.lintang.id/api/',
   requestCount: 0,
-
-  getHeader() {
-    return {
-      data: 'xxxx'
-    }
-  },
 
   getFullURL(url) {
     return this.get('baseUrl') + url;
   },
 
-  ajaxGet(url, data) {
-    return this.ajax(url, 'get', data);
+  ajaxGet(url, data, header) {
+    return this.ajax(url, 'get', data, header);
   },
 
-  ajaxPost(url, data) {
-    return this.ajax(url, 'post', data);
+  ajaxPost(url, data, header) {
+    return this.ajax(url, 'post', data, header);
   },
 
-  ajax(url, method, data) {
+  ajaxPut(url, data, header) {
+    return this.ajax(url, 'put', data, header);
+  },
+
+  ajaxDelete(url, data, header) {
+    return this.ajax(url, 'delete', data, header);
+  },
+
+  ajax(url, method, data, header) {
     this.incrementProperty('requestCount');
     var that = this;
     var fullURL = this.getFullURL(url);
 
-    return new Ember.RSVP.Promise(function (resolve, reject) {
+    var promise = new Ember.RSVP.Promise(function (resolve, reject) {
       Ember.$.ajax(fullURL, {
         method: method,
-        header: that.getHeader(),
         data: data,
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        headers: header,
 
         success(response) {
           resolve(response);
@@ -43,6 +48,9 @@ export default Ember.Service.extend({
             text: textStatus,
             error: error
           };
+          if (xhr.status === 401) {
+            that.get('uiService').showMessage('Invalid Token. Please, refresh the access token.');
+          }
           reject(reason);
         },
 
@@ -52,10 +60,11 @@ export default Ember.Service.extend({
             if (requestCount > 0) {
               that.decrementProperty('requestCount');
             }
-          }, 1000);
+          }, 200);
         }
       });
     });
 
+    return promise;
   }
 });

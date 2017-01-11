@@ -24,12 +24,7 @@
                   <div class="tick">&nbsp;</div>
               </div>
           {{/if}}
-
-          {{form-login doLogin=(action "doLogin")
-          userId=userId
-          password=password
-          rememberMe=rememberMe
-          register-as=form-login}}
+          {{form-login doLogin=(action "doLogin") rememberMe=rememberMe username=username password=password}}
         </div>
 
         <div class="login-footer">

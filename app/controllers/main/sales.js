@@ -3,7 +3,7 @@ import ArrayUtil from '../../utils/array-util';
 
 
 export default Ember.Controller.extend({
-  shownFilter: true,
+  shownFilter: false,
   //availableAircraft: [],
   //selectedAircraft: [],
   startDate: new Date(),

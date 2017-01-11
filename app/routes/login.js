@@ -1,9 +1,12 @@
 import Ember from 'ember';
-import BaseRoute from '../mixins/route-base';
 
-export default Ember.Route.extend(BaseRoute, {
-  activate() {
-    this._super();
-    this.controllerFor('login').reset();
+export default Ember.Route.extend({
+
+  setupController(controller, model) {
+    controller.setProperties({
+      hasError: false,
+      success: false,
+      rememberMe: false
+    });
   }
 });

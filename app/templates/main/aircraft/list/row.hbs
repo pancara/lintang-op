@@ -1,0 +1,39 @@
+<td style="width: 10px; text-align: center;">
+  {{pw-image default="images/default/plane.png" source=data.mainImage.url style="max-width: 250px;"}}
+    <p style="margin-top: 8px;">{{data.code}}</p>
+</td>
+<td>
+    <div class="aircraft-info">
+        <h1>{{data.registrationNumber}}</h1>
+
+        <p>
+            <span>{{data.aircraftType}}</span>
+            <span class="separator">|</span>
+            <span>{{data.maxPassengers}} Seats</span>
+        </p>
+
+        <span class="field">Base Price</span>
+
+        <p>{{format-number data.basePrice precision=0}}</p>
+
+        <span class="field">Margin Price</span>
+
+        <p>{{format-number data.marginPrice precision=0}}</p>
+
+        <span class="field">Status</span>
+
+        <p>
+          {{#if (eq data.status "ACTIVE")}}
+              <span class="pw-label pw-label-xs pw-label-success">{{data.status}}</span>
+          {{else}}
+              <span class="pw-label pw-label-xs pw-label-danger">{{data.status}}</span>
+          {{/if}}
+        </p>
+
+    </div>
+</td>
+<td class="col-lg-2" style="width:10px;">
+    <button class="btn btn-xs"{{action "click"  "showDetail" data}}>
+        detail &nbsp; {{fa-icon "angle-double-right"}}
+    </button>
+</td>

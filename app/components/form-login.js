@@ -13,9 +13,9 @@ export default Ember.Component.extend(RegisterAsComponent, {
       console.log('key down');
     },
     submit() {
-      let userId = this.get('userId');
+      let username = this.get('username');
       let password = this.get('password');
-      this.sendAction('doLogin', userId, password);
+      this.sendAction('doLogin', username, password);
     }
   }
 });

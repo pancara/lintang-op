@@ -6,6 +6,7 @@ export default Ember.Component.extend(RegisterAsComponent, {
   classNames: ['input-group', 'date'],
   attributeBindings: ['style'],
   value: new Date(),
+  disabled: false,
   $datepicker: null,
 
   didRender() {
@@ -28,8 +29,10 @@ export default Ember.Component.extend(RegisterAsComponent, {
   },
   actions: {
     pickDate() {
-      this.$datepicker.datepicker('setDate', this.get('value'));
-      this.$datepicker.datepicker('show');
+      if (this.get('disabled')) {
+        this.$datepicker.datepicker('setDate', this.get('value'));
+        this.$datepicker.datepicker('show');
+      }
     }
   }
 });

@@ -1,10 +1,11 @@
 import Ember from 'ember';
+import DateUtil from '../utils/date-util';
 
 export default Ember.Component.extend({
   tagName: 'div',
   classNames: ['pw-month-calendar'],
-  month: 11,
-  year: 2015,
+  month: DateUtil.currentMonth(),
+  year: DateUtil.currentYear(),
   markedDates: [],
   monthNavigation: false,
 
@@ -21,7 +22,6 @@ export default Ember.Component.extend({
   buildCalendar() {
     let month = this.get('month');
     let year = this.get('year');
-
 
     var date = new Date(year, month, 1);
     date.setDate(date.getDate() - date.getDay());
@@ -48,6 +48,7 @@ export default Ember.Component.extend({
     }
 
     this.set('calendar', calendar);
+    this.sendAction('monthYearChanged');
   },
 
   actions: {
@@ -56,7 +57,6 @@ export default Ember.Component.extend({
     },
 
     nextMonth() {
-      console.log('next month');
       var month = this.get('month');
       var year = this.get('year');
       month++;
@@ -68,10 +68,10 @@ export default Ember.Component.extend({
         month: month,
         year: year
       });
+
     },
 
     previousMonth() {
-      console.log('previous');
       var month = this.get('month');
       var year = this.get('year');
       month--;

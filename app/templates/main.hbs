@@ -1,11 +1,13 @@
-
 <div class="wrapper">
   {{pw-sidebar onSelectRoute=(action 'selectRoute') menus=menus}}
 
     <div class="page-content-wrapper">
       {{pw-pageheader
+      user=(concat user.firstName ' ' user.lastName)
+      operator=(concat user.operatorCode ' '  user.operatorName)
       notifications=notifications
-      updateUserProfile=(action 'updateUserProfile')
+
+      updateUserProfile=(action 'operatorUserProfile')
       changePassword=(action 'changePassword')
       logout=(action 'logout')
       selectRoute=(action 'selectRoute')

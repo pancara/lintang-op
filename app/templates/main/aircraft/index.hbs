@@ -1,0 +1,31 @@
+{{pw-page-title title="Aircraft" icon="plane"}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pw-panel pw-panel-align-right" style="margin-bottom: 8px;">
+                <button class="btn btn-xs btn-success" {{action "add"}}>
+                  {{fa-icon "plus"}} &nbsp; Add
+                </button>
+            </div>
+          {{pw-table class="aircraft-list"
+          data=data
+          headerTemplate="main/aircraft/list/header"
+          footerTemplate="main/aircraft/list/footer"
+          masterTemplate="main/aircraft/list/row"
+          detailTemplate="main/aircraft/list/row-detail"
+          isZebra=false
+          isBordered =true
+          showDetail=(action "showDetail")
+          }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+          {{pw-paging register-as=paging refresh=(action "refresh")}}
+        </div>
+    </div>
+</div>

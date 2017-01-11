@@ -1,0 +1,44 @@
+<div class="panel">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="pw-table pw-bordered">
+                    <thead>
+                    <tr>
+                        <th colspan="6">Image List</th>
+                    </tr>
+                    <tr>
+                        <th style="width: 10px;"></th>
+                        <th style="width: 10px;"></th>
+                        <th>Description</th>
+                        <th style="width: 40px;"></th>
+                        <th style="width: 120px;"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each images as |image index |}}
+                        <tr>
+                            <td>{{ add index 1 }}.</td>
+                            <td>
+                              {{pw-image default="images/aircraft.png" source=image.url style="max-width: 200px;"}}
+                            </td>
+                            <td>{{image.description}}</td>
+                            <td>{{if image.isMainImage "Main" "-"}}</td>
+                            <td>
+                                <button class="btn btn-warning btn-xs" {{action "setMainImage" image}}>main</button>
+                                <button class="btn btn-danger btn-xs" {{action "deleteImage" image}}>delete</button>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    <tr>
+                        <td></td>
+                        <td colspan="4">
+                          {{pw-upload url=(concat "aircraft/image/" modelParam.id) uploadCompleted=(action "uploadCompleted")}}
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

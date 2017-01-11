@@ -1,0 +1,83 @@
+{{pw-page-title title="Aircraft" icon="plane"}}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="pw-table aircraft-detail">
+                <tr>
+                    <td rowspan="7">
+                      {{pw-image default="images/default/plane.png" source=aircraft.mainImage.url style="max-width: 200px;"}}
+                    </td>
+                    <td class="field" style="width: 180px;">Registration Number</td>
+                    <td class="value" style="width: auto;">{{aircraft.registrationNumber}}</td>
+                    <td class="field" style="width: 180px;">Code</td>
+                    <td class="value" style="width: 220px;">{{aircraft.code}}</td>
+                </tr>
+                <tr>
+                    <td class="field">Aircraft Type</td>
+                    <td class="value">{{aircraft.aircraftType}}</td>
+
+                    <td class="field">Model</td>
+                    <td class="value">{{aircraft.model}}</td>
+                </tr>
+                <tr>
+                    <td class="field">Aircraft Name</td>
+                    <td class="value">{{aircraft.description}}</td>
+
+                    <td class="field">Year Of Make</td>
+                    <td class="value">{{aircraft.yearOfMake}}</td>
+                </tr>
+                <tr>
+                    <td class="field">Seating Max</td>
+                    <td class="value">{{aircraft.maxPassengers}}</td>
+
+                    <td class="field">Safety Rating</td>
+                    <td class="value">{{aircraft.safetyRating}}</td>
+                </tr>
+                <tr>
+                    <td class="field">Base Price</td>
+                    <td class="value">{{aircraft.basePrice}}</td>
+
+                    <td class="field">Margin Price</td>
+                    <td class="value">{{aircraft.marginPrice}}</td>
+                </tr>
+
+                <tr>
+                    <td class="field">Max Range</td>
+                    <td class="value">{{aircraft.maxRangeNm}} Nm</td>
+                    <td class="value"></td>
+                    <td class="value">{{aircraft.maxRangeKm}} Km</td>
+
+                </tr>
+                <tr>
+                    <td class="field">Speed</td>
+                    <td class="value">{{aircraft.speedKts}} Kts</td>
+                    <td class="value"></td>
+                    <td class="value">{{aircraft.speedKmh}} Kmh</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="4">
+                        <button class="btn btn-success btn-xs" {{action "refresh"}}>Refresh</button>
+                        &nbsp;
+                        <button class="btn btn-warning btn-xs" {{action "edit"}}>Edit</button>
+                        <button class="btn btn-danger btn-xs" {{action "delete"}}>Delete</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+          {{pw-tab-buttons buttons=buttons
+          buttonClick=(action 'tabButtonClick')
+          }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+          {{outlet}}
+        </div>
+    </div>
+</div>

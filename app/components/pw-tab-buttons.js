@@ -3,8 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   tagName: 'div',
   classNames: ['pw-tab-buttons'],
+  router: Ember.inject.service("-routing"),
 
-  didRender() {
+  didInsertElement() {
     let buttonCount = this.get('buttons').length;
     let width = Math.floor(100 / buttonCount);
 
@@ -14,19 +15,35 @@ export default Ember.Component.extend({
     //    width: w + '%'
     //  });
     //});
+    let r = this.get("router");
+    r.addObserver("currentRouteName", this, this.currentRouteNameChanged);
+    this.currentRouteNameChanged(r);
   },
 
+  currentRouteNameChanged(router, propertyName) {
+    let currentRoute = router.get('currentRouteName');
+
+    let buttons = this.get('buttons');
+    for (var i = 0; i < buttons.length; i++) {
+      if (buttons[i].route === currentRoute) {
+        this.activateButton(buttons[i]);
+        break;
+      }
+    }
+  },
+
+
+  activateButton(button) {
+    button.set('active', true);
+    let buttons = this.get('buttons');
+    buttons.forEach(function (bt) {
+      if (bt !== button) {
+        bt.set('active', false);
+      }
+    });
+  },
   actions: {
     buttonClick(button) {
-      button.set('active', true);
-
-      let buttons = this.get('buttons');
-      buttons.forEach(function (bt) {
-        if (bt !== button) {
-          bt.set('active', false);
-        }
-      });
-
       this.sendAction('buttonClick', button);
     }
   }

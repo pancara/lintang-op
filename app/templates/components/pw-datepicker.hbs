@@ -1,5 +1,9 @@
-<input type="text" class="form-control" readonly>
+{{#if disabled}}
+    <input type="text" class="form-control" readonly disabled>
+{{else}}
+    <input type="text" class="form-control" readonly>
+{{/if}}
 <div class="input-group-addon" {{action 'pickDate'}}>
     <!--<span class="glyphicon glyphicon-th"></span>-->
-    {{fa-icon "calendar"}}
+  {{fa-icon "calendar"}}
 </div>

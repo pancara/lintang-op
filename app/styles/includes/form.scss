@@ -3,3 +3,30 @@ span.field {
   line-height: 24px;
   color: #888;
 }
+
+span.field-group {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #888;
+  text-decoration: underline;
+}
+
+span.value {
+  font-size: 13px;
+  line-height: 24px;
+  color: #333;
+  background: #F5F5F5;
+  padding: 6px 16px 6px 8px;
+}
+
+p.description {
+  font-size: 13px;
+  color: #444;
+  &.error {
+    color: #CC0000;
+  }
+  &.success {
+    color: #156111;
+  }
+}

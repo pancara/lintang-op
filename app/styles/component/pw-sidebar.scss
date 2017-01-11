@@ -7,10 +7,12 @@ $sidebar_color: #1C1B19;
 $sidebar_menu_color: #201F1B;
 $sidebar_submenu_color: darken($sidebar_menu_color, 4%);
 $sidebar_menu_hover_color: #201F1B;
+
 //darken(saturate($menu_color, 40%), 10%);
-$sidebar_menu_active_color: #201F1B;
+
+$sidebar_menu_active_color: tint(#201F1B, 2);
 //darken(saturate($menu_color, 40%), 10%);
-$sidebar_menu_text_color: #575033;
+$sidebar_menu_text_color: #7b734a;
 $sidebar_brand_color: #1C1B19;
 
 .wrapper {
@@ -70,11 +72,11 @@ $sidebar_brand_color: #1C1B19;
       padding: 0 0;
       width: 100%;
       list-style: none;
-      border-top: 1px solid rgba(69, 74, 84, 0.1);
+      border-top: 0px solid rgba(69, 74, 84, 0.1);
 
       li {
         text-indent: 20px;
-        line-height: 60px;
+        line-height: 40px;
         color: #FFF;
         border-bottom: 0px solid lighten($sidebar_color, 2);
         display: block;
@@ -83,15 +85,15 @@ $sidebar_brand_color: #1C1B19;
         }
 
         i.fa {
-          margin-right: 24px;
+          margin-right: 16px;
         }
         img.icon-expand {
-          width: 8px;
-          height: 8px;
+          width: 12px;
+          height: 12px;
           display: none;
           float: right;
-          margin-right: 10px;
-          margin-top: 12px;
+          margin-right: 16px;
+          margin-top: 10px;
           padding: 0px 0px;
         }
         &.active {
@@ -139,25 +141,25 @@ $sidebar_brand_color: #1C1B19;
           display: none;
           max-height: 0px;
           padding: 0 0 0 0;
-          border-top: 1px solid rgba(69, 74, 84, 0.701961);
+          border-top: 0px solid rgba(69, 74, 84, 0.2);
           @include transition(max-height 500ms ease);
           li {
             &:last-child {
               border: none;
             }
             a {
-              background: $sidebar_submenu_color;
+              padding-left: 16px;
             }
           }
         }
         a {
           display: block;
           text-decoration: none;
-          font-size: 14px;
+          font-size: 12px;
           color: $sidebar_menu_text_color;
           background: transparent;
           @include transition(all 500ms ease);
-          padding-left: 16px;
+          padding-left: 4px;
           white-space: nowrap;
           &:hover {
             text-decoration: none;

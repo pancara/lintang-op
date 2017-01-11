@@ -1,9 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  salt: 'lintang-op',
-  rememberMeKey: 'lintang-op.rememberMe',
-  sessionKey: 'lintang-op.session',
+  salt: 'lintang-operator',
+
+  rememberMeKey: 'lintang-operator.rememberMe',
+  sessionKey: 'lintang-operator.session',
+  accessTokenKey: 'lintang-operator.token',
+
+  saveAccessToken(token) {
+    this.save(this.get('accessTokenKey'), token);
+  },
+
+  getAccessToken() {
+    return this.load(this.get('accessTokenKey'));
+  },
+
+  removeAccessToken() {
+    this.remove(this.get('accessTokenKey'));
+  },
 
   saveRememberMe(json) {
     this.save(this.get('rememberMeKey'), json);

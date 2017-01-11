@@ -1,0 +1,96 @@
+{
+  "count": 2,
+  "data": [
+    {
+      "aircraftType": "MID_SIZE_JET",
+      "basePrice": 87000000,
+      "description": "fal con",
+      "marginPrice": 17400000,
+      "maxPassengers": 6,
+      "maxRangeKm": 12741.76,
+      "maxRangeNm": 6880.0,
+      "model": "FALCON 7X",
+      "registrationNumber": "PK-YES",
+      "safetyRating": "ISO 9005",
+      "speedKmh": 953.78,
+      "speedKts": 515.0,
+      "status": "ACTIVE",
+      "yearOfMake": 2011,
+      "amenities": [
+        {
+          "description": "test",
+          "name": "test",
+          "id": 14,
+          "logo": "amenities/test14.jpg"
+        }
+      ],
+      "base": {
+        "id": 24,
+        "country": "Indonesia",
+        "iataCode": "HLP",
+        "icaoCode": "WIHH",
+        "municipality": "Jakarta",
+        "name": "Halim Perdanakusuma International Airport",
+        "region": "Jakarta Raya"
+      },
+      "code": "BQ4RY9RS24",
+      "id": 24,
+      "images": [
+        {
+          "id": 221,
+          "isMainImage": false,
+          "url": "aircraft/BQ4RY9RS241483570675836.png"
+        },
+        {
+          "id": 251,
+          "isMainImage": false,
+          "url": "aircraft/BQ4RY9RS241483615301663.jpg"
+        },
+        {
+          "id": 252,
+          "isMainImage": true,
+          "url": "aircraft/BQ4RY9RS241483615338643.jpg"
+        }
+      ],
+      "operator": {
+        "name": "Lintang Integration ",
+        "code": "QSBYW22",
+        "id": 22
+      }
+    },
+    {
+      "aircraftType": "MID_SIZE_JET",
+      "basePrice": 98000000,
+      "description": "GULFStREAM",
+      "marginPrice": 19600000,
+      "maxPassengers": 10,
+      "maxRangeKm": 12501.0,
+      "maxRangeNm": 6750.0,
+      "model": "Gulfstream 550",
+      "registrationNumber": "PK-NOW",
+      "safetyRating": "ISO 9015",
+      "speedKmh": 942.668,
+      "speedKts": 509.0,
+      "status": "ACTIVE",
+      "yearOfMake": 2012,
+      "amenities": [],
+      "base": {
+        "id": 25,
+        "country": "Indonesia",
+        "iataCode": "HLP",
+        "icaoCode": "WIHH",
+        "municipality": "Jakarta",
+        "name": "Halim Perdanakusuma International Airport",
+        "region": "Jakarta Raya"
+      },
+      "code": "EE19KXF425",
+      "id": 25,
+      "images": [],
+      "operator": {
+        "name": "Lintang Integration ",
+        "code": "QSBYW22",
+        "id": 22
+      }
+    }
+  ]
+}

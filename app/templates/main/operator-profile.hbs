@@ -1,1 +1,138 @@
-{{outlet}}
+{{pw-page-title title="Operator Profile" icon="building"}}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Code</span></div>
+        <div class="col-lg-5">
+            <span class="value">{{operator.code}}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Name</span></div>
+        <div class="col-lg-5">
+          {{#if editMode }}
+            {{input class="form-control" value=operatorName}}
+          {{else}}
+              <span class="value">{{operator.name}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Description</span></div>
+        <div class="col-lg-5">
+          {{#if editMode }}
+            {{textarea class="form-control" value=operatorDescription}}
+          {{else}}
+              <span class="value">{{operator.description}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Contact Name</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+            {{input class="form-control" value=operatorContactName}}
+          {{else}}
+              <span class="value">{{operator.contactName}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Contact Phone</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+            {{input class="form-control" value=operatorContactPhone}}
+          {{else}}
+              <span class="value">{{operator.contactPhone}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Contact Mail</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+            {{input class="form-control" value=operatorContactMail}}
+          {{else}}
+              <span class="value">{{operator.contactMail}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field"><b>Bank Info</b></span></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Account Number</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+            {{input class="form-control" value=operatorBankInfo.account}}
+          {{else}}
+              <span class="value">{{operator.bankInfo.account}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Account Owner</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+            {{input class="form-control" value=operatorBankInfo.name}}
+          {{else}}
+              <span class="value">{{operator.bankInfo.name}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Bank Branch</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+            {{input class="form-control" value=operatorBankInfo.branch}}
+          {{else}}
+              <span class="value">{{operator.bankInfo.branch}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2"><span class="field">Bank</span></div>
+        <div class="col-lg-5">
+          {{#if editMode}}
+              <select class="form-control" onchange={{action "selectBank" value="target.value"}}>
+                  <option value=""> - </option>
+                {{#each banks as |bankOption|}}
+                    <option value={{bankOption.id}} selected={{eq operator.bankInfo.bank.id bankOption.id}}>{{bankOption.text}}</option>
+                {{/each}}
+              </select>
+          {{else}}
+              <span class="value">{{operator.bankInfo.bank.code}} {{operator.bankInfo.bank.name}}</span>
+          {{/if}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-2">
+          {{#if editMode}}
+              <button class="btn btn-success btn-sm" {{action "save"}}>
+                {{fa-icon "check"}} &nbsp; Save
+              </button>
+              &nbsp;
+              <button class="btn btn-warning btn-sm" {{action "cancel"}}>
+                {{fa-icon "remove"}} &nbsp; Cancel
+              </button>
+          {{else}}
+              <button class="btn btn-primary btn-xs" {{action "edit"}}>
+                {{fa-icon "pencil"}} &nbsp; Edit
+              </button>
+          {{/if}}
+        </div>
+    </div>
+
+</div>
+

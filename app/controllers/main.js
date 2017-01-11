@@ -1,20 +1,28 @@
 import Ember from 'ember';
 
+
 export default Ember.Controller.extend({
+  dataStub: Ember.inject.service('datastub'),
+  securityService: Ember.inject.service('security-service'),
+  requestSender: Ember.inject.service('request-sender'),
+
+  operatorUserProfileCtrl: Ember.inject.controller('main.operator-user-profile'),
+
   init() {
-    this._super();
-
-    this.createMenus();
-    this.populateNotifications();
+    this.set('menus', this.get('dataStub').getMainMenu());
   },
 
-  createMenus: function () {
-    let menus = this.get('datastub').getMainMenu();
-    this.set('menus', menus);
-  },
+  getUserProfile() {
+    let that = this;
+    var header = {
+      'Authorization': that.get('securityService').getAuthBearer()
+    };
 
-  populateNotifications() {
-    this.set('notifications', this.get('datastub').getNotifications());
+    this.get('requestSender').ajaxGet('operatoruser/profile', null, header)
+      .then(function (user) {
+        that.set('user', user);
+      }, function (reason) {
+      });
   },
 
   actions: {
@@ -22,19 +30,44 @@ export default Ember.Controller.extend({
       if (param === undefined) {
         this.transitionToRoute(routeName);
       } else {
-        this.transitionToRoute('main.notification.notification-detail', param);
+        this.transitionToRoute('main', param);
       }
     },
 
-    updateUserProfile() {
-      this.transitionToRoute('main.user-profile');
+    operatorUserProfile() {
+      this.get('operatorUserProfileCtrl').set('user', this.get('user'));
+      this.transitionToRoute('main.operator-user-profile');
     },
 
     changePassword() {
       this.transitionToRoute('main.change-password');
     },
 
+    refreshToken() {
+      var header = {
+        'Authorization': this.get('securityService').getRefreshTokenBasic()
+      };
+
+      var promise = this.get('requestSender').ajaxGet('token', null, header);
+      let that = this;
+      promise.then(function (json) {
+        that.get('securityService').saveAccessToken(json);
+      }, function () {
+      });
+    },
+
+    // logout action
     logout() {
+      var header = {
+        'Authorization': this.get('securityService').getAuthBearer()
+      };
+      let that = this;
+
+      this.get('requestSender').ajaxDelete('authenticate', null, header)
+        .then(function () {
+          that.get('securityService').doLogout();
+        }, function () {
+        });
       this.transitionToRoute('login');
     }
   }

@@ -7,13 +7,12 @@ const Router = Ember.Router.extend({
 
 Router.map(function () {
   this.route('login');
+
   this.route('forget-password');
 
   this.route('main', function () {
     this.route('change-password');
-    this.route('user-profile', function () {
-      this.route('update');
-    });
+    this.route('operator-user-profile');
 
     this.route('booking', function () {
       this.route('active');
@@ -22,19 +21,31 @@ Router.map(function () {
 
     this.route('sales');
 
-    this.route('aircraft', {path: 'aircraft'});
-    this.route('aircraft-detail', {path: 'aircraft-detail/:id'}, function () {
-      this.route('view', {path: 'view'});
-      this.route('price-availability', {path: 'price-availability'});
+    this.route('aircraft', {path: 'aircraft'}, function () {
+      this.route('form', {path: 'form'});
+
+      this.route('detail', {path: ':id'}, function () {
+        this.route('images', {path: 'images'});
+        this.route('availability', {path: 'availability'});
+        this.route('amenities', {path: 'amenities'});
+        this.route('special-price', {path: 'special-price'});
+      });
     });
+
 
     this.route('notification', {path: 'notification'}, function () {
-      this.route('notification-detail', {path: ':id'});
+      this.route('detail', {path: ':id'});
     });
 
-    this.route('operator-profile', function () {
-      this.route('update');
+    this.route('operator-profile');
+
+    this.route('user', {path: 'user'}, function () {
+      this.route('add', {path: 'add'});
+      this.route('update-profile', {path: 'update-profile'});
+      this.route('update-role', {path: 'update-role'});
+
     });
+
     this.route('disclaimer');
   });
 

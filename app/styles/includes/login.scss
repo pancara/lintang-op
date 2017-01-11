@@ -56,10 +56,15 @@
           }
         }
 
+        &.warning {
+          i.fa {
+            color: rgba(240, 111, 19, 0.20);
+          }
+        }
         span {
           color: lighten(#A18D58, 40);
           font-size: 13px;
-//          text-shadow: 0px -1px 4px #333;
+          //          text-shadow: 0px -1px 4px #333;
           font-weight: normal;
         }
 
@@ -77,28 +82,35 @@
     }
 
     .form-login {
+      p {
+        color: #999;
+      }
       div {
         margin-top: 0px;
-        .pw-input {
-          font-size: 16px;
-          margin-bottom: 16px;
-          background: darken($input-base-color, 3);
-          border: 1px solid #000;
-          padding: 10px 12px 10px 12px;
-          color: #A18D58;
-          outline: none;
-          border-radius: 4px;
-          border: 1px solid $input-base-color;
-          @include placeholder();
-          @include input-placeholder();
-          width: 100%;
-          &:focus {
-            background: lighten($input-base-color, 2);;
-            border: 1px solid transparentize(darken($input-base-color, 0), 0.8);
-            box-shadow: 0px 0px 5px transparentize(#3355CC, 0.6);
-          }
 
-          @include input-placeholder();
+        input {
+          &.pw-input {
+            font-size: 13px;
+            margin-bottom: 16px;
+            background-color: darken($input-base-color, 3) !important;
+            border: 1px solid #000;
+            padding: 8px 12px 8px 12px;
+            color: #A18D58;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid $input-base-color;
+            @include placeholder();
+            @include input-placeholder();
+
+            width: 80%;
+            &:focus {
+              background: lighten($input-base-color, 2);;
+              border: 1px solid transparentize(darken($input-base-color, 0), 0.8);
+              box-shadow: 0px 0px 5px transparentize(#3355CC, 0.6);
+            }
+
+            @include input-placeholder();
+          }
         }
 
         .pw-button {

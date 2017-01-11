@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'lintang-op',
     environment: environment,
-    baseURL: '/lintang-op',
+    baseURL: '/',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {

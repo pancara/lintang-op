@@ -1,3 +1,46 @@
+div.aircraft-info {
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: $text-color;
+    line-height: 20px;
+    margin: 0px 0px 12px 0px;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: lighten($text-color, 0.6);
+    line-height: 20px;
+    margin: 0px 0px 12px 0px;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    span {
+      &.separator {
+        color: #CCC;
+        margin-right: 16px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+
+  span {
+    &.field {
+      font-size: 12px;
+      color: #BBB;
+    }
+    &.value {
+      font-size: 16px;
+      color: $text-color;
+    }
+  }
+
+}
+
 table.aircraft-list {
 
   td {
@@ -68,7 +111,7 @@ table.aircraft-list {
 }
 
 table.aircraft-detail {
-//  background: #FBF8EF;
+  //  background: #FBF8EF;
   margin-top: 16px;
   width: 100%;
   border-collapse: collapse;
@@ -82,14 +125,14 @@ table.aircraft-detail {
       color: #666;
 
       &.images {
-//        background: #E7E0CD;
+        //        background: #E7E0CD;
       }
     }
     &.value {
       font-size: 16px;
       color: $text-color;
       &.images {
-//        background: #E7E0CD;
+        //        background: #E7E0CD;
       }
 
       img {

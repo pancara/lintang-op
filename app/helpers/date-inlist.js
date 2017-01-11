@@ -4,6 +4,8 @@ export function dateInlist(params/*, hash*/) {
   let date = params[0];
   let list = params[1];
 
+  if (list == null) return false;
+
   for (var i = 0; i < list.length; i++) {
     let item = list[i];
     if (item.getDate() === date.getDate() &&
