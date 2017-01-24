@@ -1,0 +1,27 @@
+span.pw-text {
+
+  &.pw-text-blue {
+    color: #4640ff;
+  }
+
+  &.pw-text-block {
+    display: block;
+  }
+
+  &.pw-text-sm {
+    font-size: 12px;
+    color: #BBB;
+    margin-bottom: 0px;
+  }
+
+  &.pw-text-md {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 8px;
+  }
+
+  &.pw-text-bg {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

@@ -1,6 +1,11 @@
 import moment from 'moment';
 
 export default {
+
+  toISODateString(date) {
+
+  },
+
   currentYear() {
     return new Date().getFullYear();
   },

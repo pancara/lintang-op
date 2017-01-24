@@ -1,10 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  init() {
-    let datastub = this.get('datastub');
+  dataStub: Ember.inject.service('datastub'),
 
-    this.set('chartData1', datastub.getChartDataSalesByDate());
-    this.set('chartData2', datastub.getChartDataSalesByAircraftType());
+  init() {
+    let dataStub = this.get('dataStub');
+
+    this.set('chartData1', dataStub.getChartDataSalesByDate());
+    this.set('chartData2', dataStub.getChartDataSalesByAircraftType());
   }
 });

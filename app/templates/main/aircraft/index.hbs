@@ -11,12 +11,12 @@
                   {{fa-icon "plus"}} &nbsp; Add
                 </button>
             </div>
-          {{pw-table class="aircraft-list"
-          data=data
+          {{pw-table
           headerTemplate="main/aircraft/list/header"
           footerTemplate="main/aircraft/list/footer"
           masterTemplate="main/aircraft/list/row"
           detailTemplate="main/aircraft/list/row-detail"
+          data=data
           isZebra=false
           isBordered =true
           showDetail=(action "showDetail")

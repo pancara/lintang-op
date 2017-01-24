@@ -1,39 +1,71 @@
 <td style="width: 10px; text-align: center;">
-  {{pw-image default="images/default/plane.png" source=data.mainImage.url style="max-width: 250px;"}}
-    <p style="margin-top: 8px;">{{data.code}}</p>
+  {{pw-image default="images/default/plane.png" source=data.mainImage.url style="max-width: 180px; margin-bottom: 4px;"}}
+  <span class="pw-text pw-text-block pw-text-sm">
+    {{data.code}}
+  </span>
+  <button class="btn btn-xs btn-primary" {{action "click"  "showDetail" data}}>
+      detail
+  </button>
 </td>
 <td>
-    <div class="aircraft-info">
-        <h1>{{data.registrationNumber}}</h1>
+    <span class="pw-text pw-text-bg pw-text-block" style="color: #cbaf5c;">{{data.registrationNumber}}</span>
+    <span class="pw-text pw-text-block pw-text-md" style="color: #d8bb62;">{{data.model}}</span>
+    <span class="pw-text pw-text-block pw-text-md">{{data.aircraftType}}</span>
 
-        <p>
-            <span>{{data.aircraftType}}</span>
-            <span class="separator">|</span>
-            <span>{{data.maxPassengers}} Seats</span>
-        </p>
+    <p>
+      {{#if (eq data.status "ACTIVE")}}
+          <span class="pw-label pw-label-xs pw-label-success">{{data.status}}</span>
+      {{else}}
+          <span class="pw-label pw-label-xs pw-label-danger">{{data.status}}</span>
+      {{/if}}
+    </p>
 
-        <span class="field">Base Price</span>
 
-        <p>{{format-number data.basePrice precision=0}}</p>
-
-        <span class="field">Margin Price</span>
-
-        <p>{{format-number data.marginPrice precision=0}}</p>
-
-        <span class="field">Status</span>
-
-        <p>
-          {{#if (eq data.status "ACTIVE")}}
-              <span class="pw-label pw-label-xs pw-label-success">{{data.status}}</span>
-          {{else}}
-              <span class="pw-label pw-label-xs pw-label-danger">{{data.status}}</span>
-          {{/if}}
-        </p>
-
-    </div>
 </td>
-<td class="col-lg-2" style="width:10px;">
-    <button class="btn btn-xs"{{action "click"  "showDetail" data}}>
-        detail &nbsp; {{fa-icon "angle-double-right"}}
-    </button>
+<td>
+    <span class="pw-text pw-text-sm pw-text-block">
+        Max Range
+    </span>
+
+    <span class="pw-text pw-text-md pw-text-block">
+      {{format-number data.maxRangeNm precision=0}} Nm
+      &nbsp;&nbsp;&nbsp;
+      {{format-number data.maxRangeKm precision=0}} Km
+    </span>
+
+    <span class="pw-text pw-text-sm pw-text-block">
+        Speed
+    </span>
+
+    <span class="pw-text pw-text-md pw-text-block">
+      {{format-number data.speedKts precision=0}} Kts
+        &nbsp;&nbsp;&nbsp;
+      {{format-number data.speedKmh precision=0}} Kmh
+    </span>
+
+    <span class="pw-text pw-text-sm pw-text-block">
+        Safety Rating
+    </span>
+    <span class="pw-text pw-text-block pw-text-md">{{data.safetyRating}}</span>
+</td>
+
+<td>
+    <span class="pw-text pw-text-sm pw-text-block">
+        Base Price
+    </span>
+
+    <span class="pw-text pw-text-md pw-text-block">
+      {{format-number data.basePrice precision=0}}
+    </span>
+
+    <span class="pw-text pw-text-sm pw-text-block">
+        Margin Price
+    </span>
+
+    <span class="pw-text pw-text-md pw-text-block">
+      {{format-number data.marginPrice precision=0}}
+    </span>
+
+    <span class="pw-text pw-text-sm pw-text-block">Max Passengers</span>
+    <span class="pw-text pw-text-block pw-text-md">{{data.maxPassengers}} Seats</span>
 </td>

@@ -8,6 +8,7 @@ export default Ember.Controller.extend({
   cryptService: Ember.inject.service('crypt-service'),
   securityService: Ember.inject.service('security-service'),
   requestSender: Ember.inject.service('requestSender'),
+  uiService: Ember.inject.service('ui-service'),
 
   aircraft: null,
   operator: null,
@@ -27,6 +28,8 @@ export default Ember.Controller.extend({
 
   operatorSearchMode: false,
   airportSearchMode: false,
+
+  shownSimulationPanel: false,
 
   afterRender() {
     this.set('genders', this.get('dataStub').getGenders());
@@ -87,6 +90,16 @@ export default Ember.Controller.extend({
     let that = this;
 
     let keyword = this.get('keywordAirport');
+    if (keyword == null || keyword.length === 0) {
+      this.get('uiService').showMessage('Keyword required.');
+      return;
+    }
+
+    if (keyword.length < 3) {
+      this.get('uiService').showMessage('Minimal keyword is 3 character.');
+      return;
+    }
+
     let param = {
       limit: paging.get('rowPerPage'),
       page: paging.get('current')
@@ -264,7 +277,6 @@ export default Ember.Controller.extend({
       this.set('airport', airport);
     },
 
-
     refreshOperator() {
 
     },
@@ -290,6 +302,10 @@ export default Ember.Controller.extend({
     maxRangeKmChange() {
       let maxRangeKm = this.get('maxRangeKm');
       this.set('maxRangeNm', UnitUtil.kmToKnot(maxRangeKm, 2));
+    },
+
+    toggleSimulationPanel() {
+      this.toggleProperty('shownSimulationPanel');
     }
 
   }

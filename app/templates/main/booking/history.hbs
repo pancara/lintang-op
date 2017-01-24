@@ -1,3 +1,40 @@
-  {{#each bookings as |booking|}}
-    {{lt-booking booking=booking showOnly=true}}
-  {{/each}}
+<div class="panel panel-default" style="border: none;">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <button class="btn btn-xs btn-primary pull-right" {{action "toggleFilter"}}>
+                  {{#if filterShown}}
+                    {{fa-icon "caret-up"}}
+                  {{else}}
+                    {{fa-icon "caret-down"}}
+                  {{/if}}
+                    &nbsp;
+                    Filter
+                </button>
+            </div>
+        </div>
+      {{#if filterShown}}
+          <div class="row">
+              <div class="col-lg-12">
+                {{pw-booking-filter applyFilter=(action "applyFilter")}}
+              </div>
+          </div>
+      {{/if}}
+        <div class="row">
+            <div class="col-lg-12">
+              {{pw-table data=data
+              headerTemplate="main/booking/history/header"
+              footerTemplate="main/booking/history/footer"
+              masterTemplate="main/booking/history/row"
+              detailTemplate="main/booking/history/row-detail"
+              }}
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+              {{pw-paging register-as=paging refresh=(action "refresh")}}
+            </div>
+        </div>
+    </div>
+</div>

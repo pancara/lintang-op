@@ -1,0 +1,38 @@
+<div class="panel-body">
+    <div class="row">
+        <div class="col-lg-2">
+            <span class="field">Booking Number</span>
+        </div>
+        <div class="col-lg-3">
+          {{input class="form-control" value=orderNumber}}
+        </div>
+        <div class="col-lg-2">
+            <span class="field">Booking Type</span>
+        </div>
+        <div class="col-lg-3">
+            <select class="form-control" onchange={{action "selectOrderType" value="target.value"}}>
+                <option value="">-</option>
+              {{#each orderTypes as |orderTypeOption|}}
+                  <option value={{orderTypeOption}} selected={{eq orderTypeOption orderType}}>{{orderTypeOption}}</option>
+              {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <span class="field">Customer Mail</span>
+        </div>
+        <div class="col-lg-3">
+          {{input class="form-control" value=customerMail}}
+        </div>
+    </div>
+
+    <div class="row" style="padding: 0 0 0 0;">
+        <div class="col-lg-6 col-lg-offset-2">
+            <button class="btn btn-success btn-xs"{{action 'applyFilter'}}>
+              &nbsp; Filter &nbsp;
+            </button>
+        </div>
+    </div>
+</div>

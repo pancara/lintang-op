@@ -8,9 +8,9 @@
   display: inline-block;
   background: #FFF;
   padding: 4px 8px 4px 8px;
-  border-radius: 7px;
+  border-radius: 3px;
   font-size: 12px;
-  background: #B52521;
+  background: rgba(255, 17, 30, 0.48);
   margin-top: 4px;
   margin-bottom: 4px;
   @include filter(drop-shadow(-3px 4px 4px rgba(0, 0, 0, 0.2)));

@@ -30,6 +30,7 @@ export default Ember.Controller.extend({
   afterRender() {
     this.populateLookups();
     this.populateBookingDates();
+    this.get('paging').addObserver('current', this, this.populateBookingDates);
   },
 
   reset() {
@@ -48,10 +49,10 @@ export default Ember.Controller.extend({
     let modelParam = this.get('aircraftDetailCtrl').get('modelParam');
 
     let paging = this.get('paging');
-    var rowPerPage = 30;
+    var rowPerPage = 10;
     var current = 1;
     if (paging != null) {
-      paging.set('rowPerPage', 30);
+      paging.set('rowPerPage', 10);
       current = paging.get('current');
     }
 
@@ -63,6 +64,8 @@ export default Ember.Controller.extend({
       month: this.get('month') + 1, // month is 1 base
       year: this.get('year')
     };
+
+    this.set('start', rowPerPage * (current - 1));
 
     Ember.$.extend(param, this.get('filter'));
     let url = 'aircraft/unavailability';
@@ -213,5 +216,7 @@ export default Ember.Controller.extend({
     yearChange() {
       this.refreshData();
     }
+
+
   }
 });

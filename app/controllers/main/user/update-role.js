@@ -15,6 +15,19 @@ export default Ember.Controller.extend({
   errorMessage: 'Error',
   success: false,
 
+  init() {
+    this.addObserver('user', this, this.userChanged);
+  },
+
+  userChanged() {
+    let user = this.get('user');
+    if (user == null) {
+      this.set('role', null);
+    } else {
+      this.set('role', user.subRole);
+    }
+  },
+
   afterRender() {
     this.set('userRoles', this.get('dataStub').getOperatorRoles());
   },

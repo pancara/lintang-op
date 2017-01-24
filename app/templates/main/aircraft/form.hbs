@@ -57,6 +57,18 @@
     </div>
 
     <div class="row">
+        <div class="col-lg-2"><span class="field">Status</span></div>
+        <div class="col-lg-2">
+            <select class="form-control" onchange={{action "selectStatus" value="target.value"}}>
+                <option>-</option>
+              {{#each aircraftStatuses as |statusOption|}}
+                  <option value={{statusOption}} selected={{eq status statusOption}}>{{statusOption}}</option>
+              {{/each}}
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-lg-2"><span class="field">Safety Rating</span></div>
         <div class="col-lg-5">
           {{input class="form-control" value=safetyRating}}
@@ -120,17 +132,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-2"><span class="field">Status</span></div>
-        <div class="col-lg-2">
-            <select class="form-control" onchange={{action "selectStatus" value="target.value"}}>
-                <option>-</option>
-              {{#each aircraftStatuses as |statusOption|}}
-                  <option value={{statusOption}} selected={{eq status statusOption}}>{{statusOption}}</option>
-              {{/each}}
-            </select>
-        </div>
-    </div>
+
     <div class="row">
         <div class="col-lg-2"><span class="field">Base Airport</span></div>
         <div class="col-lg-7">
@@ -172,12 +174,45 @@
                 }}
               </div>
               <div>
-                {{pw-paging register-as=pagingAirport refresh=(action "refreshAirport")}}
+                {{pw-paging register-as=pagingAirport refresh=(action "refreshAirport") rowPerPage=10}}
               </div>
           </div>
       </div>
   {{/if}}
 
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <button class="btn btn-sm" {{action "toggleSimulationPanel"}}>
+              {{#if shownSimulationPanel }}
+                {{fa-icon "caret-up"}}
+                  &nbsp; Hide Price Simulation
+              {{else}}
+                {{fa-icon "caret-down"}}
+                  &nbsp; Show Price Simulation
+              {{/if}}
+
+            </button>
+        </div>
+    </div>
+
+  {{#if shownSimulationPanel}}
+      <div class="row">
+          <div class="col-lg-2"><span class="field">
+        </span></div>
+          <div class="col-lg-8">
+            {{pw-price-simulation
+              aircraftType=aircraftType
+              speedKts=speedKts
+              maxRangeNm=maxRangeNm
+              basePrice=basePrice
+              marginPrice=marginPrice
+              baseAirport=airport
+            }}
+
+          </div>
+      </div>
+  {{/if}}
 
     <div class="row">
         <div class="col-lg-9 col-lg-offset-2">

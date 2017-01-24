@@ -9,6 +9,7 @@ Router.map(function () {
   this.route('login');
 
   this.route('forget-password');
+  this.route('forget-password-reset');
 
   this.route('main', function () {
     this.route('change-password');
@@ -54,6 +55,7 @@ Router.map(function () {
   this.route('logout');
   this.route('demo');
   this.route('report');
+
 });
 
 export default Router;

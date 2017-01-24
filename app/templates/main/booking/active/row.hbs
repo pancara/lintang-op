@@ -1,0 +1,43 @@
+<td style="width: 10px;">{{index}}.</td>
+<td>
+    <button class="pw-button-transparent" {{action "toggleDetail"}}>
+      {{#if detailVisible }}
+        {{fa-icon "angle-up" size=1}}
+      {{else}}
+        {{fa-icon "angle-down" size=1}}
+      {{/if}}
+    </button>
+</td>
+<td>
+  {{#if (eq data.orderStatus "CREATED")}}
+      <span class="pw-label pw-label-primary pw-label-xs">CREATED</span>
+  {{else}}
+    {{#if (eq data.orderStatus "CANCELED")}}
+        <span class="pw-label pw-label-danger pw-label-xs">CANCELED</span>
+    {{else}}
+      {{#if (eq data.orderStatus "PAID")}}
+          <span class="pw-label pw-label-success pw-label-xs">PAID</span>
+      {{else}}
+        {{#if (eq data.orderStatus "CONFIRMED")}}
+            <span class="pw-label pw-label-purple pw-label-xs">CONFIRMED</span>
+        {{/if}}
+      {{/if}}
+    {{/if}}
+  {{/if}}
+</td>
+<td>
+  {{data.number}}
+</td>
+<td>
+  {{data.customer.username}} <br/>
+  {{data.customer.firstName}} {{data.customer.lastName}}
+</td>
+<td>
+  {{moment-format data.orderDate 'DD MMM YYYY HH:mm:ss Z'}}
+</td>
+<td>
+  {{data.charter.aircraft.registrationNumber}} <br/>
+  {{data.charter.aircraft.aircraftType}}
+  {{data.charter.aircraft.model}}
+</td>
+

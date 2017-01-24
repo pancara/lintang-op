@@ -27,7 +27,7 @@
                 <tbody>
                 {{#each data.data as |booking index |}}
                     <tr>
-                        <td>{{ add index 1 }}.</td>
+                        <td>{{ add index start 1 }}.</td>
                         <td>{{moment-format booking.date 'DD MMMM YYYY'}}</td>
                         <td>{{booking.reason}}</td>
                         <td>{{booking.description}}</td>

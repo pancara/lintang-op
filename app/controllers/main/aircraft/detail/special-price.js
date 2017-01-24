@@ -105,6 +105,8 @@ export default Ember.Controller.extend({
     let specialPricePercentage = this.get('specialPricePercentage');
     let specialPriceDescription = this.get('specialPriceDescription');
 
+    console.log(specialPriceDate);
+
     let param = {
       date: specialPriceDate,
       percentageOfPrice: specialPricePercentage,

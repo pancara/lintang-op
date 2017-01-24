@@ -1,0 +1,140 @@
+<td colspan="2" style="background: #EEE;"></td>
+<td colspan="3">
+    <h5><span style="color: #A89342;">Customer</span></h5>
+    <table class="pw-table pw-bordered">
+        <tbody>
+        <tr>
+            <td>User Name :</td>
+            <td>{{data.customer.username}}</td>
+            <td rowspan="5" style="text-align: center;">
+              {{pw-image default="images/customer.png" source=data.customer.profilePicture style="width: 60px;"}}
+            </td>
+        </tr>
+        <tr>
+            <td>Name :</td>
+            <td>
+              {{data.customer.firstName}}
+              {{data.customer.lastName}}
+            </td>
+        </tr>
+        <tr>
+            <td>Contact Name :</td>
+            <td>{{data.charter.contactPerson.name}}</td>
+        </tr>
+        <tr>
+            <td>Contact Email :</td>
+            <td>{{data.charter.contactPerson.email}}</td>
+        </tr>
+        <tr>
+            <td>Contact Phone :</td>
+            <td>{{data.charter.contactPerson.phone}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h5><span style="color: #A89342;">{{data.charter.passengers.length}} Passengers</span></h5>
+    <table class="pw-table pw-bordered">
+        <tbody>
+        {{#each data.charter.passengers as |passenger index|}}
+            <tr>
+                <td style="width: 10px;">{{add index 1}}.</td>
+                <td>{{passenger.name}}</td>
+                <td>
+                  {{passenger.identityType}} &nbsp;&nbsp;
+                  {{passenger.identityNumber}}
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+    <h5>
+        <span style="color: #A89342;">Payment</span>
+        <span class="pw-label pw-label-success pw-label-xs pull-right">{{data.payment.status}}</span>
+    </h5>
+    <table class="pw-table pw-bordered">
+        <tbody>
+        <tr>
+            <td>Amount :</td>
+            <td style="text-align: right;">{{format-number data.payment.amount precision=0}}</td>
+        </tr>
+        <tr>
+            <td>Discount :</td>
+            <td style="text-align: right;">{{format-number data.payment.discount precision=0}}</td>
+        </tr>
+        <tr>
+            <td>Amount After Discount :</td>
+            <td style="text-align: right;">{{format-number data.payment.amountAfterDiscount precision=0}}</td>
+        </tr>
+        <tr>
+            <td>Sub Total :</td>
+            <td style="text-align: right;">{{format-number data.payment.subTotal precision=0}}</td>
+        </tr>
+        <tr>
+            <td>Total Pricing :</td>
+            <td style="text-align: right;">{{format-number data.payment.totalPricing precision=0}}</td>
+        </tr>
+        {{#each data.payment.pricings as |pricing|}}
+            <tr>
+                <td> &nbsp;&nbsp;&nbsp;&nbsp; {{pricing.pricingName}}</td>
+                <td style="text-align: right;">{{format-number pricing.amount precision=0}}</td>
+            </tr>
+        {{/each}}
+        <tr>
+            <td><b>Total :</b></td>
+            <td style="text-align: right;"><b>{{format-number data.payment.totalAmount precision=0}}</b></td>
+        </tr>
+        </tbody>
+    </table>
+</td>
+<td colspan="2">
+    <h5><span style="color: #A89342;">Legs</span></h5>
+    <table class="pw-table pw-bordered" style="width: 100%;">
+        <thead>
+        <tr>
+            <th style="width:10px;">No</th>
+            <th style="width: 100px;">Flight Date</th>
+            <th style="width: 100px;">Origin</th>
+            <th style="width: 100px;">Destination</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each data.charter.legs as |leg index|}}
+            <tr>
+                <td>{{add index 1}}.</td>
+                <td>
+                  {{moment-format leg.flightDate 'DD MMM YYYY HH:mm:ss Z'}}
+                </td>
+                <td>
+                  {{leg.originAirport.icaoCode}}<br/>
+                  {{leg.originAirport.name}}
+                </td>
+                <td>
+                  {{leg.destinationAirport.icaoCode}}<br/>
+                  {{leg.destinationAirport.name}}
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+    <br/>
+    <br/>
+
+    <div style="text-align: center;">
+
+        Approve booking ?
+        <br/>
+        <br/>
+
+        <button class="btn btn-sm btn-success" {{action "click"  "approveBooking" data}}>
+            {{fa-icon "check"}}
+            APPROVE
+        </button>
+        &nbsp;
+        <button class="btn btn-sm btn-danger" {{action "click"  "declineBooking" data}}>
+          {{fa-icon "remove"}}
+            DECLINE
+        </button>
+    </div>
+</td>

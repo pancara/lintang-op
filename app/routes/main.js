@@ -1,23 +1,17 @@
 import Ember from 'ember';
 import BaseRoute from '../mixins/route-base';
 export default Ember.Route.extend(BaseRoute, {
+  securityService: Ember.inject.service('security-service'),
 
-  setupController(controller, model) {
-    controller.getUserProfile();
+  beforeModel(transition) {
+    let currentUser = this.get('securityService').getCurrentUser();
+    if (currentUser == null) {
+      this.transitionTo('login');
+    }
   },
 
-  actions: {
-    willTransition(transition) {
-      let targetName = transition.targetName;
-
-      if (targetName.startsWith('main.booking')) {
-        if (targetName !== 'main.booking.index') {
-          this.controllerFor('main.booking').set('inChildRoute', true);
-        } else {
-          this.controllerFor('main.booking').set('inChildRoute', false);
-        }
-
-      }
-    }
+  setupController(controller, model) {
+    Ember.run.schedule('afterRender', controller, controller.getUserProfile);
   }
+
 });

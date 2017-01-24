@@ -33,9 +33,9 @@ table.pw-table {
       }
     }
   }
-  tbody {
-    tr {
-      td {
+  > tbody {
+    > tr {
+      > td {
         font-size: 12px;
         color: #888;
         @include transition(background 500ms ease-out);
@@ -65,9 +65,9 @@ table.pw-table {
         border-bottom: 1px solid #FFF !important;
       }
     }
-    tbody {
-      tr {
-        td {
+    > tbody {
+      > tr {
+        > td {
           border-bottom: 1px solid $pw_table_border_color !important;
         }
       }

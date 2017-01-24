@@ -77,7 +77,7 @@ export default Ember.Service.extend({
     });
     messageBoxes.push(msgBox);
 
-    let timeout = pTimeout ? pTimeout : 5000;
+    let timeout = pTimeout ? pTimeout : 2000;
 
     Ember.run.later(this, function () {
       let newMessageBoxes = messageBoxes.filter(e => e !== msgBox);

@@ -33,10 +33,13 @@
 
     tbody {
       td {
-        padding: 5px 8px 5px 8px;
+        padding: 5px 5px 5px 5px;
         text-align: center;
         span {
-          padding: 10px 12px;
+          display: inline-block;
+          padding: 5px 6px;
+          margin-top: 2px;
+          margin-bottom: 2px;
           font-size: 15px;
           color: #BBB;
           &.in-month {

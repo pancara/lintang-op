@@ -1,0 +1,50 @@
+.help-page {
+  min-height: 100vh;
+  background: #222 url("../images/login-bg.jpg") no-repeat fixed;
+  background-position: center center;
+
+  .help-header {
+    margin: auto 0;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 24px 10px 0px;
+    img.logo {
+      width: 300px;
+      margin-bottom: 24px;
+    }
+    p.desc {
+      text-indent: 0px;
+      color: lighten($pw-base-color, 3);
+      font-size: 13px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .help-content {
+    position: relative;
+    width: 310px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 4px 8px 4px;
+    @include transition(all 550ms ease-in-out);
+  }
+
+  .help-content-detail {
+    position: relative;
+    width: 310px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 4px 8px 4px;
+    @include transition(all 550ms ease-in-out);
+    color: #EEE;
+    h4 {
+      letter-spacing: 2px;
+    }
+  }
+  .help-footer {
+    opacity: 0.0;
+
+  }
+}

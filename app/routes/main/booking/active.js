@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  activate() {
-    this.controllerFor('main.booking').set('activeRoute', 'main.booking.active');
+
+  setupController(controller, model) {
+    Ember.run.schedule('afterRender', controller, controller.afterRender);
   }
+
 });
