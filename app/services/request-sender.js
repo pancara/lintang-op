@@ -1,8 +1,9 @@
 import Ember from 'ember';
+import Constant from '../utils/constants';
 
 export default Ember.Service.extend({
   uiService: Ember.inject.service('ui-service'),
-  baseUrl: 'http://dev.lintang.id/api/',
+  baseUrl: Constant.SERVER_URL,
   requestCount: 0,
 
   getFullURL(url) {

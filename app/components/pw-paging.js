@@ -29,25 +29,27 @@ export default Ember.Component.extend(RegisterAsComponent, {
     },
 
     go(param) {
-      console.log(param);
-
       var current = this.get('current');
       var pageCount = this.get('pageCount');
 
       if ('first' === param) {
         if (current > 1) {
           this.set('current', 1);
+          this.sendAction('refresh');
         }
       } else if ('previous' === param) {
         if (current > 1) {
           this.set('current', current - 1);
+          this.sendAction('refresh');
         }
       } else if ('next' === param) {
         if (current < pageCount) {
           this.set('current', current + 1);
+          this.sendAction('refresh');
         }
       } else if ('last' === param) {
         this.set('current', pageCount);
+        this.sendAction('refresh');
       }
     }
   }

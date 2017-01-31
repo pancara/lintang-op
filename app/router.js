@@ -53,9 +53,6 @@ Router.map(function () {
   this.route('help');
 
   this.route('logout');
-  this.route('demo');
-  this.route('report');
-
 });
 
 export default Router;

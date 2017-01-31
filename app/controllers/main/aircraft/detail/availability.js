@@ -49,10 +49,9 @@ export default Ember.Controller.extend({
     let modelParam = this.get('aircraftDetailCtrl').get('modelParam');
 
     let paging = this.get('paging');
-    var rowPerPage = 10;
+    var rowPerPage = 31;
     var current = 1;
     if (paging != null) {
-      paging.set('rowPerPage', 10);
       current = paging.get('current');
     }
 
