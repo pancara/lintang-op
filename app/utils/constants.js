@@ -1,6 +1,11 @@
 export default  {
-  SERVER_URL: 'http://dev-app.lintang.id:8080/api/',
-  HOST_URL: 'http://dev-app.lintang.id:8080/',
+  // DEV enviroment  ===================
+  //SERVER_URL: 'http://dev-app.lintang.id:8080/api/',
+  //HOST_URL: 'http://dev-app.lintang.id:8080/',
+
+  // UAT environment ===================
+  SERVER_URL: 'https://uat.lintang.id/api/',
+  HOST_URL: 'https://uat.lintang.id/',
 
   // must be synced with constant value is constants.scss file.
   SCREEN: {
@@ -14,11 +19,6 @@ export default  {
       WIDTH: 1200
     }
   },
-
-  // web admin
-  //SYSTEM_DATE_FORMAT: 'YYYY-MM-DTHH:mm:ss.sssZ',
-  //API_KEY: '422472005DA84BDF8CEF44E95E5F829F',
-  //SECRET_KEY: '0EF34524AE1AED5A'
 
   // web operator
   SYSTEM_DATE_FORMAT: 'YYYY-MM-DTHH:mm:ss.sssZ',

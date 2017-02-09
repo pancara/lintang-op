@@ -7,7 +7,8 @@ export default Ember.Controller.extend({
   requestSender: Ember.inject.service('request-sender'),
   hasError: false,
   success: false,
-  username: 'badubadu@gmail.com',
+  username: '',
+  //username: 'badubadu@gmail.com',
 
   actions: {
     doSubmit(username) {

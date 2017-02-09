@@ -34,6 +34,10 @@
                         <td></td>
                         <td colspan="4">
                           {{pw-upload url=(concat "aircraft/image/" modelParam.id) uploadCompleted=(action "uploadCompleted")}}
+                            <div style="margin-top: 16px;">
+                                Recommended image aspect ration is 3 : 1.<br/>
+                                Example: 600 x 200 pixels.
+                            </div>
                         </td>
                     </tr>
                     </tbody>

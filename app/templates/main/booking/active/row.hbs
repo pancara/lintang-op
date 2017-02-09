@@ -33,7 +33,12 @@
   {{data.customer.firstName}} {{data.customer.lastName}}
 </td>
 <td>
-  {{moment-format data.orderDate 'DD MMM YYYY HH:mm:ss Z'}}
+  {{moment-format data.orderDate 'DD MMM YYYY HH:mm:ss'}}
+</td>
+<td>
+  {{#each data.charter.legs as |leg index|}}
+      {{moment-format leg.flightDate 'DD MMM YYYY HH:mm:ss'}} <br/>
+  {{/each}}
 </td>
 <td>
   {{data.charter.aircraft.registrationNumber}} <br/>

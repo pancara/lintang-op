@@ -9,8 +9,10 @@ export default Ember.Controller.extend(RouteBase, {
   hasError: false,
   success: false,
   rememberMe: false,
-  username: 'badubadu@gmail.com',
-  password: 'badubadu',
+  username: '',
+  password: '',
+  // username: 'badubadu@gmail.com',
+  //password: 'badubadu',
 
   actions: {
     doLogin(username, password) {
@@ -46,11 +48,12 @@ export default Ember.Controller.extend(RouteBase, {
         }, function (reason) {
           that.set('hasError', true);
           that.set('success', false);
-          console.log(reason.xhr.status);
           if (reason.xhr.status >= 500 || reason.xhr.status === 0) {
             that.set('errorMessage', 'Can not connect to server');
+          } else if (reason.xhr.responseText != null) {
+            that.set('errorMessage', reason.xhr.responseText);
           } else {
-            that.set('errorMessage', 'Invalid credentials');
+            that.set('errorMessage', 'Invalid inputs');
           }
         });
     }

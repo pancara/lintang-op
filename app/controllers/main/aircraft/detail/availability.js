@@ -60,7 +60,7 @@ export default Ember.Controller.extend({
       limit: rowPerPage,
       page: current,
       aircraftId: modelParam.id,
-      month: this.get('month') + 1, // month is 1 base
+      month: parseInt(this.get('month')) + 1, // month is 1 base
       year: this.get('year')
     };
 

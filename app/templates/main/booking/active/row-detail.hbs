@@ -87,7 +87,7 @@
         </tbody>
     </table>
 </td>
-<td colspan="2">
+<td colspan="3">
     <h5><span style="color: #A89342;">Legs</span></h5>
     <table class="pw-table pw-bordered" style="width: 100%;">
         <thead>
@@ -103,7 +103,7 @@
             <tr>
                 <td>{{add index 1}}.</td>
                 <td>
-                  {{moment-format leg.flightDate 'DD MMM YYYY HH:mm:ss Z'}}
+                  {{moment-format leg.flightDate 'DD MMM YYYY HH:mm:ss'}}
                 </td>
                 <td>
                   {{leg.originAirport.icaoCode}}<br/>
@@ -121,9 +121,9 @@
     <br/>
     <br/>
 
-    <div style="text-align: center;">
+    <div style="text-align: center; background: #F5F5F5; border-radius: 5px; padding: 16px 16px;">
 
-        Approve booking ?
+        <span style="font-size: 14px; color: #666;">Approve booking ?</span>
         <br/>
         <br/>
 

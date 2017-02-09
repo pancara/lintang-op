@@ -58,29 +58,16 @@ export default Ember.Controller.extend({
   },
 
   reset() {
-    //let that = this;
-    //let operator = this.get('operatorCtrl').get('operator');
-    //this.addObserver('operator', this, function () {
-    //  let operator = that.get('operator');
-    //  that.set('name', operator.get('name'));
-    //  that.set('description', operator.get('description'));
-    //  that.set('contactName', operator.get('contactName'));
-    //  that.set('contactPhone', operator.get('contactPhone'));
-    //  that.set('contactMail', operator.get('contactMail'));
-    //
-    //
-    //  let bankInfo = operator.get('bankInfo');
-    //  if (bankInfo != null) {
-    //    that.set('bankAccountNumber', bankInfo.account);
-    //    that.set('bankAccountName', bankInfo.get('name'));
-    //    that.set('bankBranch', bankInfo.get('branch'));
-    //
-    //    let bank = bankInfo.get('bank');
-    //    if (bank != null) {
-    //      that.set('bankId', bank.get('id'));
-    //    }
-    //  }
-    //});
+    this.set('firstName', null);
+    this.set('lastName', null);
+    this.set('gender', null);
+    this.set('username', null);
+    this.set('password', null);
+    this.set('confirm', null);
+    this.set('role', null);
+
+    this.set('error', false);
+    this.set('success', false);
   },
 
   actions: {

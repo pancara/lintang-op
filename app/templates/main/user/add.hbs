@@ -16,47 +16,6 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-2"><span class="field">Operator</span></div>
-        <div class="col-lg-5">
-            {{operator.code}} {{operator.name}}
-            {{#if (not searchMode)}}
-              <button class="btn btn-primary btn-xs" {{action "searchOperator" true}}>Select Operator</button>
-            {{/if}}
-        </div>
-    </div>
-
-  {{#if searchMode}}
-      <div class="row">
-          <div class="col-lg-10 col-lg-offset-2">
-              <button class="btn btn-xs pull-right" {{action "searchOperator" false}}>
-                {{fa-icon "remove"}}
-              </button>
-
-              <div class="form-inline" style="margin-bottom: 5px;">
-                  <div class="form-group">
-                    {{input class="form-control" value=keyword placeholder="Code"}}
-                      &nbsp;
-                      <button class="btn btn-sm pull-right" {{action "doSearchOperator"}}>Search</button>
-                  </div>
-              </div>
-              <div>
-                {{pw-table data=data
-                headerTemplate="search-operator/header"
-                footerTemplate="search-operator/footer"
-                masterTemplate="search-operator/row"
-                detailTemplate="search-operator/row-detail"
-                isZebra=false
-                selectOperator=(action "selectOperator")
-                }}
-              </div>
-              <div>
-                {{pw-paging register-as=paging refresh=(action "refreshOperators")}}
-              </div>
-          </div>
-      </div>
-  {{/if}}
-
-    <div class="row">
         <div class="col-lg-2"><span class="field">First Name</span></div>
         <div class="col-lg-3">
           {{input class="form-control" value=firstName}}

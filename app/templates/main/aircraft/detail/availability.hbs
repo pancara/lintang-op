@@ -14,45 +14,44 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <table class="pw-table pw-bordered">
-                <thead>
-                <tr>
-                    <th style="width: 10px;"></th>
-                    <th style="width: 300px;">Date</th>
-                    <th style="width: 100px;">Reason</th>
-                    <th style="width: auto;">Description</th>
-                    <th style="width: 160px;"></th>
-                </tr>
-                </thead>
-                <tbody>
-                {{#each data.data as |booking index |}}
-                    <tr>
-                        <td>{{ add index start 1 }}.</td>
-                        <td>{{moment-format booking.date 'DD MMMM YYYY'}}</td>
-                        <td>{{booking.reason}}</td>
-                        <td>{{booking.description}}</td>
-                        <td>
-                            <button class="btn btn-warning btn-xs" {{action "editBooking" booking}}>edit</button>
-                            <button class="btn btn-danger btn-xs" {{action "deleteBooking" booking}}>delete</button>
-                        </td>
-                    </tr>
-                {{/each}}
-                </tbody>
-                <tfoot>
-                <tr>
-                    <td></td>
-                    <td>
-                      {{#unless editMode}}
-                          <button class="btn btn-success btn-xs" {{action "addBooking"}}>
-                              add
-                          </button>
-                      {{/unless}}
-                    </td>
-                </tr>
-                </tfoot>
-            </table>
+          {{#unless editMode}}
+              <div style="margin-bottom: 8px;">
+                {{#unless editMode}}
+                    <button class="btn btn-success btn-xs" {{action "addBooking"}}>
+                        {{fa-icon "plus"}}&nbsp;add
+                    </button>
+                {{/unless}}
+              </div>
+              <table class="pw-table pw-bordered">
+                  <thead>
+                  <tr>
+                      <th style="width: 10px;"></th>
+                      <th style="width: 300px;">Date</th>
+                      <th style="width: 100px;">Reason</th>
+                      <th style="width: auto;">Description</th>
+                      <th style="width: 160px;"></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {{#each data.data as |booking index |}}
+                      <tr>
+                          <td>{{ add index start 1 }}.</td>
+                          <td>{{moment-format booking.date 'DD MMMM YYYY'}}</td>
+                          <td>{{booking.reason}}</td>
+                          <td>{{booking.description}}</td>
+                          <td>
+                              <button class="btn btn-warning btn-xs" {{action "editBooking" booking}}>edit</button>
+                              <button class="btn btn-danger btn-xs" {{action "deleteBooking" booking}}>delete</button>
+                          </td>
+                      </tr>
+                  {{/each}}
+                  </tbody>
 
-          {{pw-paging register-as=paging refresh=(action "refresh") rowPerPage=31}}
+              </table>
+
+            {{pw-paging register-as=paging refresh=(action "refresh") rowPerPage=31}}
+
+          {{/unless}}
 
           {{#if editMode}}
               <div class="panel panel-default" style="margin-top: 8px;">

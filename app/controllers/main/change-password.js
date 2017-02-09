@@ -26,7 +26,6 @@ export default Ember.Controller.extend({
       let newPassword = this.get('newPassword');
       let confirmation = this.get('confirmation');
 
-      console.log(oldPassword);
       if (oldPassword === undefined || oldPassword == null || oldPassword === '') {
         console.log('old password empty');
         let prop = {
